@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Đăng ký</title>
+
+
+
+  <!-- Bootstrap core CSS -->
+
+  <link rel="stylesheet" href="../../css/all.min.css">
+  <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link rel="stylesheet" href="../../css/style-dang.css">
+  <link href="../../css/css_login/signin.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="zalo-chat-widget" data-oaid="783045327304238665" data-welcome-message="Rất vui khi được hỗ trợ bạn!"
+    data-autopopup="0" data-width="350" data-height="420"></div>
+
+  <script src="https://sp.zalo.me/plugins/sdk.js"></script>
+  <!-- Thanh menu tim kiem -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-menu fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="../../index.html"><i class="fa fa-mobile-alt"></i> Mobile Shop</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="input-group md-form form-sm form-2 pl-5 pr-5">
+        <input class="form-control my-0 py-1 lime-border" type="text" placeholder="Bạn tìm gì..." aria-label="Search">
+        <div class="input-group-append">
+          <span class="input-group-text lime lighten-2" id="basic-text1"><i class="fas fa-search text-grey"
+              aria-hidden="true"></i></span>
+        </div>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto pt-3">
+          <li class="nav-item ">
+            <a href="../../LienHe/Contact.html">
+              <div class="item-menu">
+
+                <i class="fas fa-phone-square-alt"></i>
+                <div class="item-menu-text">
+                  <p>Liên hệ </p>
+                </div>
+
+              </div>
+            </a>
+          </li>
+          <li class="nav-item"><a href="#">
+              <div class="item-menu">
+                <i class="fas fa-money-check"></i>
+                <div class="item-menu-text">
+                  <p>Kiểm tra đơn hàng </p>
+                </div>
+
+              </div>
+            </a>
+          </li>
+          <li class="nav-item"><a href="../../Login_Page/sign-in/signIn.html">
+              <div class="item-menu">
+                <i class="fas fa-user"></i>
+                <div class="item-menu-text">
+                  <p>Đăng nhập</p>
+                </div>
+
+              </div>
+            </a>
+          </li>
+          <li class="nav-item"><a href="../../GioHang&checkout_Page/gioHang.html">
+              <div class="item-menu">
+                <i class="fas fa-shopping-cart"></i>
+                <div class="item-menu-text">
+                  <p>Giỏ hàng </p>
+                </div>
+
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </nav>
+
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="../../index.html">Trang chủ</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Đăng kí tài khoản mới</li>
+    </ol>
+  </nav>
+
+
+  <form action="checkOTP.html" class="form-signin" id="register">
+    <img class="mb-4" src="../../image/imgLogin/icon.png" alt="" width="72" height="72">
+    <h1 class="h3 mb-3 font-weight-normal"> Đăng kí tài khoản mới</h1>
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="frame-register">
+          <div class="form-input"> <i class="fas fa-user"></i> <input type="text" id="inputname" class=" "
+              placeholder="Họ" onfocusout="check_name(this.id)"></div>
+          <div class="require mt-1 ml-5" id="require-lname">Họ không được để trống </div>
+          <div class="require mt-1 ml-5" id="require-lname2"> Họ Không bao gồm các ký tự đặc biệt </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="frame-register">
+          <div class="form-input"> <i class="fas fa-user"></i> <input type="text" id="inputname" class=" "
+              placeholder="Tên" onfocusout="check_name2(this.id)"></div>
+          <div class="require mt-1 ml-5" id="require-fname"> Tên không được để trống </div>
+          <div class="require mt-1 ml-5" id="require-fname2">Tên không bao gồm các ký tự đặc biệt </div>
+        </div>
+      </div>
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="frame-register">
+          <div class="form-input">
+            <label class="">+84</label>
+            <input type="number" class=" " id="inputphone" placeholder="Nhập số điện thoại "
+              onfocusout="check_phone(this.id)"></div>
+          <div class="require mt-1 ml-5" id="require-phone">Vui lòng nhập đúng số điện thoại</div>
+        </div>
+      </div>
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="frame-register">
+
+          <div class="form-input">
+            <i class="fas fa-key"></i>
+            <input type="password" id="inputPassword" class="l" placeholder="Mật Khẩu"
+              onfocusout="check_password(this.id)"></div>
+          <div class="require mt-1 ml-5" id="require-password"> Mật khẩu tối thiểu 8 ký tự, bao gồm chữ và số </div>
+        </div>
+      </div>
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="frame-register">
+
+          <div class="form-input">
+            <i class="fas fa-key"></i>
+            <input type="password" id="inputPassword-confirm" class="" placeholder="Nhập lại mật khẩu"
+              onfocusout="check_password2(this.id,'inputPassword')">
+          </div>
+          <div class=" require mt-1 ml-5" id="require-password2">Nhập lại mật khẩu không khớp </div>
+        </div>
+      </div>
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="frame-register">
+
+          <div class="form-input">
+            <i class="fas fa-address-book"></i>
+            <input type="text" class="" placeholder="Địa chỉ "></div>
+          <!-- <div class="require mt-1 ml-5" id="require-name"> Tên không được để trống </div>
+          <div class="require mt-1 ml-5" id="require-name2">Không bao gồm các ký tự đặc biệt </div> -->
+        </div>
+      </div>
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="frame-register">
+
+          <div class="form-input">
+            <i class="fas fa-mail-bulk"></i>
+            <input type="email" id="inputemail" class="" onfocusout="check_email(this.id)" placeholder="Email">
+          </div>
+
+          <div class="require mt-1 ml-5" id="require-email"> Vui lòng nhập đúng định dạng email </div>
+        </div>
+      </div>
+
+      <!-- <div class="frame-register">
+          <div class="d-block overflow-auto">
+            <label for="inputPassword"></label>
+            <div class="form-input">
+              <i class="fas fa-phone"></i>
+              <input type="number" class=" " id="inputphone" placeholder="Nhập số điện thoại"
+                onfocusout="check_phone(this.id)"></div>
+          </div>
+          <div class="require mt-1 ml-5" id="require-phone">Vui lòng nhập đúng số điện thoại
+          </div>
+        </div> -->
+      <!-- <div class="frame-register">
+          <div class="d-block overflow-auto">
+            <label for="inputphone"></label>
+            <div class="form-input">
+              <i class="fas fa-mail-bulk"></i>
+              <input type="email" id="inputemail" class="" onfocusout="check_email(this.id)" placeholder="Email">
+            </div>
+          </div>
+
+          <div class="require mt-1 ml-5" id="require-email">Email không hợp lệ
+          </div>
+        </div> -->
+
+      <!-- <div class="frame-register">
+          <div class="d-block overflow-auto">
+            <label for="inputPassword"></label>
+            <div class="form-input">
+              <i class="fas fa-key"></i>
+              <input type="password" id="inputPassword" class="l" placeholder="Mật Khẩu"
+                onfocusout="check_password(this.id)"></div>
+          </div>
+          <div class="require mt-1 ml-5" id="require-password">Mật khẩu chứa ít
+            nhất 8 ký tự
+          </div>
+        </div> -->
+
+      <!-- <div class="frame-register">
+          <div class="d-block overflow-auto">
+            <label for="inputPassword"></label>
+            <div class="form-input">
+              <i class="fas fa-key"></i>
+              <input type="password" id="inputPassword-confirm" class="" placeholder="Nhập lại mật khẩu">
+            </div>
+          </div>
+        </div> -->
+    </div>
+    <div class="col-lg-12 col-md-12 col-sm-12">
+      <div class="mess-register">
+        <input type="checkbox">
+        <p>Chúng tôi sẽ sử dụng những thông tin trên để liên hệ với quý khách hàng trong vấn đề mua bán cũng như vận
+          chuyển, bạn có chấp nhận đăng ký với những thông tin này không?</p>
+      </div>
+    </div>
+
+    </div>
+    <div class="checkbox">
+      <br />
+      <a href="signIn.html">Quay lại trang đăng nhập</a>
+    </div>
+    <button class="btn btn-lg btn-primary btn-block">Đăng kí</button>
+
+  </form>
+  <!-- footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white"></p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+</body>
+<script src="../../js/xuli-form/form-register.js"></script>
+
+</html>
