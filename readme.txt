@@ -6,6 +6,6 @@
 
 ![Imgur](https://i.imgur.com/4BorWXG.jpg)
 
-[Imgur](https://i.imgur.com/XB4y7N2.jpg)
+![Imgur](https://i.imgur.com/AGC6IY8.jpg)
 
-![Imgur](https://imgur.com/tdc3a3Z.png)
+![Imgur](https://i.imgur.com/XB4y7N2.jpg)
