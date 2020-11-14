@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Thông tin tài khoản</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="../css/css_Profile/profile.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../css/all.min.css">
+  <link rel="stylesheet" href="../css/style-dang.css">
+</head>
+
+<body class="Profile_page">
+
+  <!-- Thanh menu tim kiem -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-menu fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html"><i class="fa fa-mobile-alt"></i> Mobile Shop</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="input-group md-form form-sm form-2 pl-5 pr-5">
+        <input class="form-control my-0 py-1 lime-border" type="text" placeholder="Bạn tìm gì..." aria-label="Search">
+        <div class="input-group-append">
+          <span class="input-group-text lime lighten-2" id="basic-text1"><a href=""><i class="fas fa-search text-grey"
+                aria-hidden="true"></i></a></span>
+        </div>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto pt-3">
+          <li class="nav-item ">
+            <a href="../LienHe/Contact.html">
+              <div class="item-menu">
+
+                <i class="fas fa-phone-square-alt"></i>
+                <div class="item-menu-text">
+                  <p>Liên hệ </p>
+                </div>
+
+              </div>
+            </a>
+          </li>
+          <li class="nav-item"><a href="#">
+              <div class="item-menu">
+                <i class="fas fa-money-check"></i>
+                <div class="item-menu-text">
+                  <p>Kiểm tra đơn hàng </p>
+                </div>
+
+              </div>
+            </a>
+          </li>
+          <li class="nav-item"><a href="../Login_Page/sign-in/signIn.html">
+              <div class="item-menu">
+                <i class="fas fa-sign-out-alt"></i>
+                <div class="item-menu-text">
+                  <p>Đăng xuất</p>
+                </div>
+
+              </div>
+            </a>
+          </li>
+          <li class="nav-item"><a href="../GioHang&checkout_Page/gioHang.html">
+              <div class="item-menu">
+                <i class="fas fa-shopping-cart"></i>
+                <div class="item-menu-text">
+                  <p>Giỏ hàng </p>
+                </div>
+
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </nav>
+  <div class="filter-menu1">
+    <div class="">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../index.html">Trang chủ</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Chỉnh sửa thông tin</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+
+  <div class=" container m-2 mb-5">
+    <div class="row">
+      <div class="col-sm-4">
+
+        <ul class="list-group mt-3 ps-menu">
+          <a href="#">
+            <li onclick="switchPage(id)" id="ThongTinCaNhan" class="list-group-item active"><i
+                class="fa fa-id-card"></i>
+              Thông tin
+              cá nhân</li>
+          </a> <a href="#">
+            <li onclick="switchPage(id)" id="DonDatHang" class="list-group-item"><i class="fas fa-box"></i> Đơn hàng đã
+              đặt <span class="badge badge-secondary">
+                103</span></li>
+          </a> <a href="#">
+            <li onclick="switchPage(id)" id="GioHangCuaToi" class="list-group-item"><i class="fas fa-shopping-cart"></i>
+              Giỏ hàng
+              của tôi <span class="badge badge-danger"> 39</span></li>
+          </a> <a href="#">
+            <li onclick="switchPage(id)" id="SanPhamDoiTra" class="list-group-item"><i class="fas fa-sync"></i> Gửi phản
+              hồi
+            </li>
+          </a>
+        </ul>
+
+        <!-- <div class="toast mt-3" role="alert" data-autohide="false" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <img src="../image/img_Profile/ip.jpeg" class="rounded iphone12 mr-2">
+            <strong class="mr-auto"> Đơn hàng #12345 </strong>
+            <small>11 mins ago</small>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="toast-body">
+            Shipper đang trên đường giao đơn hàng này
+          </div>
+        </div> -->
+
+        <script>
+          $(document).ready(function () {
+            $('.toast').toast('show');
+          });
+        </script>
+
+      </div>
+      <div class="col-sm-8">
+        <div id="Card_ThongTinCaNhan" class="card block_component">
+          <div class="card-header">
+            <span>
+              <img src="../image/img_Profile/config.png" class=" config card-img-top" alt="..."></span>
+            <span><strong>Chỉnh sửa thông tin cá nhân</strong></span>
+          </div>
+          <div class="card-body">
+
+            <!-- @@@@@@@@@@@@@@@@@ -->
+            <div class="row">
+
+
+              <div class="col-lg-6 col-md-12 col-sm-12">
+                <h5 class="spacing_form">Họ </h5>
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text"><i class="fas fa-user-circle"></i></div>
+                  </div>
+                  <input type="text" class="form-control py-4" value="Nguyễn">
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 col-sm-12">
+                <h5 class="spacing_form">Tên</h5>
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text"><i class="fas fa-user-circle"></i></div>
+                  </div>
+                  <input type="text" class="form-control py-4" value=" Dũng">
+                </div>
+              </div>
+              <div class="col-12">
+                <h5 class="spacing_form">SĐT liên hệ</h5>
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text"><i class="fas fa-mobile-alt"></i></div>
+                  </div>
+                  <input type="text" class="form-control py-4" value="0954547984">
+                </div>
+              </div>
+              <div class="col-12">
+                <h5 class="spacing_form">Email</h5>
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text"><i class="fas fa-mail-bulk"></i></div>
+                  </div>
+                  <input type="text" class="form-control py-4" value="vandung123@gmail.com" disabled>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12">
+                <h5 class="spacing_form">Địa chỉ giao hàng mặc định</h5>
+
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text"><i class="fas fa-map-marked-alt"></i></div>
+                  </div>
+                  <input type="text" class="form-control py-4" value="Khu Phố 6, Phường Linh Trung, Quận Thủ Đức">
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+
+
+              <div class="col-6">
+                <h5 class="spacing_form">Thay đổi mật khẩu</h5>
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text"><i class="fas fa-key"></i></div>
+                  </div>
+                  <input type="text" class="form-control py-4" placeholder="***********">
+                </div>
+              </div>
+              <div class="col-6">
+                <h5 class="spacing_form">Nhập lại mật khẩu</h5>
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text"><i class="fas fa-key"></i></div>
+                  </div>
+                  <input type="text" class="form-control py-4" placeholder="***********">
+                </div>
+              </div>
+            </div>
+
+            <!-- @@@@@@@@@@@@@@@@@ -->
+
+            <a href="#" class="btn btn-primary spacing_form px-5 "> <i class="far fa-save"></i> Lưu </a>
+            <a href="#" class="btn btn-danger spacing_form px-5 mx-3"><i class="far fa-trash-alt"></i> Hủy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class=" bg-dark footerA text-center d-flex justify-content-center">
+    <div class="container pt-4">
+      <div class="row">
+        <div class="ml-5 col-3">
+          <div class="block">
+            <p>PHƯƠNG THỨC THANH TOÁN</p>
+            <p><img class="icon m-2" src="footer_phuongthuocThanhtoan/cash.svg" width="54">
+              <img class="icon  m-2" src="footer_phuongthuocThanhtoan/installment.svg" width="54">
+              <img class="icon  m-2" src="footer_phuongthuocThanhtoan/internet-banking.svg" width="54">
+              <img class="icon  m-2" src="footer_phuongthuocThanhtoan/jcb.svg" width="54">
+              <img class="icon  m-2" src="footer_phuongthuocThanhtoan/mastercard.svg" width="54">
+              <img class="icon  m-2" src="footer_phuongthuocThanhtoan/visa.svg" width="54">
+            </p>
+          </div>
+          <p style="margin-top: -10px; font-size: 1em;">lượt truy cập</p>
+          <p style="margin-top: -20px;"><strong id="luottrruycap">9472</strong></p>
+          <script>
+            var myVar = setInterval(myTimer, 1000);
+            function myTimer() {
+              document.getElementById("luottrruycap").innerHTML =
+                Math.floor(Math.random() * 10000) + 9999;
+            }
+          </script>
+        </div>
+
+
+
+        <div class="col-5">
+          <div class="PhoneSupport">
+            <p>HỖ TRỢ KHÁCH HÀNG</p>
+            <p> Gọi mua hàng: <strong>1800.1099</strong> (7:30 - 22:00)</p>
+            <p> Gọi khiếu nại: <strong class="ml-1">1800.1079</strong> (8:00 - 21:30)</p>
+            <p> Gọi bảo hành: <strong>1800.1069</strong> (8:00 - 21:00)</p>
+          </div>
+          <img width="30%" src="footer_phuongthuocThanhtoan/BoCongThuong.png">
+          <img width="10%" src="footer_phuongthuocThanhtoan/BoCongThuong2.png">
+        </div>
+
+
+        <div class="col-3 hoptac">
+          <p> HỢP TÁC VÀ LIÊN KẾT</p>
+          <p> <a href="">Chính sách bảo hành</a></p>
+          <p><a href=""> Chính sách đổi trả</a></p>
+          <p> <a href="">Tuyển dụng</a></p>
+          <p class="footerIcon">
+            <i style="color:rgb(13, 107, 214);" class="fa fa-facebook-official" aria-hidden="true"></i>
+            <i style="color: rgb(214, 18, 18);" class="fa fa-youtube-play mx-2" aria-hidden="true"></i>
+            <i style="color: rgb(144, 42, 228);" class="fa fa-linkedin-square" aria-hidden="true"></i>
+            <i style="color:rgb(10, 146, 146);" class="fa fa-twitter mx-2" aria-hidden="true"></i>
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <p class="description">© 1992. Công ty cổ phần MobileShop. GPMXH: 238/GP-BTTTT do Bộ Thông
+              Tin và
+              Truyền Thông cấp ngày 04/06/1990. Địa chỉ: 128 Trần Quang Khải, P. Tân Định, Q.1, TP.Hồ Chí Minh. Điện
+              thoại: 028 38125960. Email: cskh@mobileShop.com. Chịu trách nhiệm nội dung: Huỳnh Văn Tốt</p>
+          </div>
+        </div>
+
+      </div>
+      <!-- /.container -->
+  </footer>
+
+  <script src="../js/js_bao/js_profile/profile.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>
