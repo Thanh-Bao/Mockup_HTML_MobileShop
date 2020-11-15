@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Shop Homepage - Start Bootstrap Template</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../css/style-dang.css" rel="stylesheet">
+  <link href="../css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="zalo-chat-widget" data-oaid="783045327304238665" data-welcome-message="Rất vui khi được hỗ trợ bạn!"
+    data-autopopup="0" data-width="350" data-height="420"></div>
+
+  <script src="https://sp.zalo.me/plugins/sdk.js"></script>
+  <!-- Thanh menu tim kiem -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-menu fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html"><i class="fa fa-mobile-alt"></i> Mobile Shop</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="input-group md-form form-sm form-2 pl-5 pr-5">
+        <input class="form-control my-0 py-1 lime-border" type="text" placeholder="Bạn tìm gì..." aria-label="Search">
+        <div class="input-group-append">
+          <span class="input-group-text lime lighten-2" id="basic-text1"><a href=""><i class="fas fa-search text-grey"
+              aria-hidden="true"></i></a></span>
+        </div>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto pt-3">
+          <li class="nav-item ">
+            <a href="#">
+              <div class="item-menu">
+
+                <i class="fas fa-phone-square-alt"></i>
+                <div class="item-menu-text">
+                  <p>
+Liên hệ & Hỗ trợ </p>
+                </div>
+
+              </div>
+            </a>
+          </li>
+          <li class="nav-item"><a href="#">
+              <div class="item-menu">
+                <i class="fas fa-money-check"></i>
+                <div class="item-menu-text">
+                  <p>Kiểm tra đơn hàng </p>
+                </div>
+
+              </div>
+            </a>
+          </li>
+          <li class="nav-item"><a href="#">
+              <div class="item-menu">
+                <i class="fas fa-user"></i>
+                <div class="item-menu-text">
+                  <p>Đăng nhập</p>
+                </div>
+
+              </div>
+            </a>
+          </li>
+          <li class="nav-item"><a href="#">
+              <div class="item-menu">
+                <i class="fas fa-shopping-cart"></i>
+                <div class="item-menu-text">
+                  <p>Giỏ hàng </p>
+                </div>
+
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </nav>
+  <!-- Thanh menu loc du lieu va sap xep-->
+  <div class="filter-menu">
+    <div class="container">
+      <div class="row">
+        <!--Noi dung loc du lieu-->
+        <div class="col-6 alpha">
+          <ul class="list-menu">
+            <li class="item-menu" id="trademark">
+              <div class="header"><a href="#">Thương hiệu <i class="fas fa-caret-down"></i></a>
+              </div>
+              <div class="content-dropdown" id="content-trademark">
+                <ul class="list-menu">
+                  <div class="row">
+                    <div class="col-4">
+                      <li class="item-menu"><a href="#">Apple</a></li>
+                      <li class="item-menu"><a href="#">Samsung</a></li>
+                      <li class="item-menu"><a href="#">OPPO</a></li>
+                    </div>
+                    <div class="col-4">
+                      <li class="item-menu"><a href="#">Xiaomi</a></li>
+                      <li class="item-menu"><a href="#">Vivo</a></li>
+                      <li class="item-menu"><a href="#">Huawei</a></li>
+                    </div>
+                    <div class="col-4">
+                      <li class="item-menu"><a href="#">Realme</a></li>
+                      <li class="item-menu"><a href="#">Nokia</a></li>
+                      <li class="item-menu"><a href="#">Hãng khác</a></li>
+                    </div>
+                  </div>
+                </ul>
+              </div>
+            </li>
+            <li class="item-menu" id="rateprice">
+              <div class="header"><a href="#">Mức giá <i class="fas fa-caret-down"></i></a>
+              </div>
+              <div class="content-dropdown" id="content-rateprice">
+                <ul class="list-menu">
+                  <div class="row">
+                    <div class="col-4">
+                      <li class="item-menu"><a href="#">Dưới 1 triệu</a></li>
+                      <li class="item-menu"><a href="#">Từ 1 đến 2 triệu</a></li>
+                      <li class="item-menu"><a href="#">Từ 2 đến 3 triệu</a></li>
+                    </div>
+                    <div class="col-4">
+                      <li class="item-menu"><a href="#">Từ 3 đến 5 triệu</a></li>
+                      <li class="item-menu"><a href="#">Từ 5 đến 7 triệu</a></li>
+                      <li class="item-menu"><a href="#">Từ 7 đến 9 triệu</a></li>
+                    </div>
+                    <div class="col-4">
+                      <li class="item-menu"><a href="#">Từ 9 đến 12 triệu</a></li>
+                      <li class="item-menu"><a href="#">Từ 12 đến 15 triệu</a></li>
+                      <li class="item-menu"><a href="#">Trên 15 triệu</a></li>
+                    </div>
+                  </div>
+                </ul>
+              </div>
+            </li>
+            <li class="item-menu" id="producttype">
+              <div class="header"><a href="#">Loại sản phẩm <i class="fas fa-caret-down"></i></a>
+              </div>
+              <div class="content-dropdown" id="content-producttype">
+                <ul class="list-menu">
+                  <div class="row">
+                    <div class="col-4">
+                      <li class="item-menu"><a href="#"> Điện thoại mới (232)</a></li>
+
+                    </div>
+                    <div class="col-4">
+                      <li class="item-menu"><a href="#">Điện thoại cũ (0)</a></li>
+                    </div>
+                    <div class="col-4">
+                    </div>
+                  </div>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!--Noi dung sap xep-->
+        <div class="col-6 beta">
+          <ul class="list-menu">
+            <li class="item-menu" id="order">
+              <div class="header"><a href="#">Xếp theo <i class="fas fa-caret-down"></i></a></div>
+              <div class="content-dropdown" id="content-order">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="list-group">
+                      <a href="#" class="list-group-item list-group-item-action">Mới cập nhật</a>
+                      <a href="#" class="list-group-item list-group-item-action">Sản phẩm Mới-Cũ</a>
+                      <a href="#" class="list-group-item list-group-item-action">Sản phẩm Cũ-Mới</a>
+                      <a href="#" class="list-group-item list-group-item-action">Tên A-Z</a>
+                      <a href="#" class="list-group-item list-group-item-action">Tên Z-A</a>
+                      <a href="#" class="list-group-item list-group-item-action">Được xem nhiều nhất</a>
+                      <a href="#" class="list-group-item list-group-item-action">Đánh giá cao</a>
+
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <li class="item-menu">
+                <a href="#">
+                  <div class="filter-check"> <input type="checkbox" name="check" onclick="onlyOne(this)" value="thapcao"
+                      id="thapcao">
+                    <label for="thapcao"> Giá cao đến thấp<i class="fas fa-arrow-up"></i></label></div>
+                </a>
+              </li>
+              <li class="item-menu">
+                <a href="#">
+                  <div class="filter-check"> <input type="checkbox" name="check" onclick="onlyOne(this)" value="caothap"
+                      id="caothap">
+                    <label for="caothap"> Giá thấp đến cao<i class="fas fa-arrow-down"></i></label></div>
+                </a>
+              </li>
+              <script>
+                function onlyOne(checkbox) {
+                  var checkboxes = document.getElementsByName('check')
+                  checkboxes.forEach((item) => {
+                    if (item !== checkbox) item.checked = false
+                  })
+                }
+              </script>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+
+
+      <!--Slider san pham noi bat-->
+
+
+    </div>
+    <!--Thanh bar tim kiem theo noi dung-->
+    <div class="row">
+
+      <div class="col-3" id="bar-side">
+        <div class="filter-bar">
+          <div class="filter-bar-frame">
+            <div class="filter-bar-card">
+              <div class="filter-bar-title">
+                <h5>Hệ điều hành</h5>
+              </div>
+              <div class="filter-bar-select">
+                <div class="check-select">
+                  <input type="checkbox" value="android" name="android" id="android">
+                  <label for=android>IOS </label>
+                </div>
+                <div class="check-select">
+                  <input type="checkbox" value="ios" name="ios" id="ios">
+                  <label for=ios>Andriod </label>
+                </div>
+
+              </div>
+            </div>
+            <div class="filter-bar-card">
+              <div class="filter-bar-title">
+                <h5>Kích cỡ màn hình</h5>
+              </div>
+              <div class="filter-bar-select">
+                <div class="check-select">
+                  <input type="checkbox" value="5inch" name="5inch" id="5inch">
+                  <label for=5inch>Màn hình nhỏ (Dưới 5 INCH)</label>
+                </div>
+                <div class="check-select">
+                  <input type="checkbox" value="5-6inch" name="5-6inch" id="5-6inch">
+                  <label for=5-6inch>Vừa tay (5 INCH đến 6 INCH) </label>
+                </div>
+                <div class="check-select">
+                  <input type="checkbox" value="6inch" name="6inch" id="6inch">
+                  <label for=6inch>Trên 6 INCH </label>
+                </div>
+
+              </div>
+            </div>
+            <div class="filter-bar-card">
+              <div class="filter-bar-title">
+                <h5>Bộ nhớ trong</h5>
+              </div>
+              <div class="filter-bar-select">
+                <div class="check-select">
+                  <input type="checkbox" value="8g" name="8g" id="8g">
+                  <label for="8g">Nhỏ hơn 8GB </label>
+                </div>
+                <div class="check-select">
+                  <input type="checkbox" value="16-128g" name="16-128g" id="16-128g">
+                  <label for="16-128g">16GB đến 128GB </label>
+                </div>
+                <div class="check-select">
+                  <input type="checkbox" value="256g" name="256g" id="256g">
+                  <label for="256g">256GB</label>
+                </div>
+                <div class="check-select">
+                  <input type="checkbox" value="512g" name="512g" id="512g">
+                  <label for="512g">512GB </label>
+                </div>
+
+              </div>
+            </div>
+            <div class="filter-bar-card">
+              <div class="filter-bar-title">
+                <h5>Dung lượng RAM</h5>
+              </div>
+              <div class="filter-bar-select">
+                <div class="check-select">
+                  <input type="checkbox" value="r-4g-down" name="r-4g-down" id="r-4g-down">
+                  <label for="r-4g-down">Dưới 4GB </label>
+                </div>
+                <div class="check-select">
+                  <input type="checkbox" value="r-4g-6g" name="r-4g-6g" id="r-4g-6g">
+                  <label for="r-4g-6g">4GB đến 6GB </label>
+                </div>
+                <div class="check-select">
+                  <input type="checkbox" value="r-8g" name="r-8g" id="r-8g">
+                  <label for="r-8g">8GB </label>
+                </div>
+                <div class="check-select">
+                  <input type="checkbox" value="r-12g-up" name="r-12g-up" id="r-12g-up">
+                  <label for="r-12g-up">12GB trở lên </label>
+                </div>
+
+              </div>
+            </div>
+            <div class="filter-bar-card">
+              <div class="filter-bar-title">
+                <h5>Camera trước</h5>
+              </div>
+              <div class="filter-bar-select">
+                <div class="check-select">
+                  <input type="checkbox" value="b-5mp-down" name="b-5mp-down" id="b-5mp-down">
+                  <label for="b-5mp-down">Dưới 5 MP </label>
+                </div>
+                <div class="check-select">
+                  <input type="checkbox" value="b-5mp-12mp" name="b-5mp-12mp" id="b-5mp-12mp">
+                  <label for="b-5mp-12mp">5 MP đến 12 MP </label>
+                </div>
+                <div class="check-select">
+                  <input type="checkbox" value="b-12mp-up" name="b-12mp-up" id="b-12mp-up">
+                  <label for="b-12mp-up">Trên 12 MP</label>
+                </div>
+
+
+              </div>
+              <div class="filter-bar-card">
+                <div class="filter-bar-title">
+                  <h5>Camera sau</h5>
+                </div>
+                <div class="filter-bar-select">
+                  <div class="check-select">
+                    <input type="checkbox" value="a-5mp-down" name="a-5mp-down" id="a-5mp-down">
+                    <label for="a-5mp-down">Dưới 5 MP </label>
+                  </div>
+                  <div class="check-select">
+                    <input type="checkbox" value="a-5mp-12mp" name="a-5mp-12mp" id="a-5mp-12mp">
+                    <label for="a-5mp-12mp">5 MP đến 12 MP </label>
+                  </div>
+                  <div class="check-select">
+                    <input type="checkbox" value="a-12mp-up" name="a-12mp-up" id="a-12mp-up">
+                    <label for="a-12mp-up">Trên 12 MP</label>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!--Noi dung ket qua sau khi tim kiem-->
+      <div class="col-9" id="result-content">
+        <!--Hang ket qua-->
+        <div class="col-12">
+          <div class="title-searching">
+
+            <h4>
+              Tìm thấy <span>2.502 </span>kết quả
+            </h4>
+            <i class="fas fa-search">
+            </i>
+            <hr>
+          </div>
+        </div>
+        <div class="row-content">
+          <div class="row">
+            <div class="col-4">
+              <div class="card">
+                <div class="card-img"><a href="#">
+                    <img src="../image/index/637076224208985186_vivo-y19-dd.jpg" class="" alt="..."></a>
+                </div>
+                <div class="card-content">
+                  <div class="card-title">
+                    <a href="#">Iphone 12 64 GBIphone 12 64 GBIphone 12 64 GB</a></div>
+                  <div class="card-price">
+                    <span>
+                      <div class="card-count">19.990.000 <span class="unit">đ</span>
+                      </div>
+                      <div class="card-discount">
+                        23.000.000 <span class="unit">đ</span>
+                      </div>
+                  </div>
+                  <div class="card-stars">
+                    <span> <i class="fas fa-star text-warning"></i></span>
+                    <span> <i class="fas fa-star text-warning"></i></span>
+                    <span> <i class="fas fa-star text-warning"></i></span>
+                    <span> <i class="fas fa-star text-warning"></i></span>
+                    <span> <i class="fas fa-star  text-dark"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card">
+                <div class="card-img"><a href="#">
+                    <img src="../image/index/637076224208985186_vivo-y19-dd.jpg" class="" alt="..."></a>
+                </div>
+                <div class="card-content">
+                  <div class="card-title">
+                    <a href="#">Iphone 12 64 GBIphone 12 64 GBIphone 12 64 GB</a></div>
+                  <div class="card-price">
+                    <span>
+                      <div class="card-count">19.990.000 <span class="unit">đ</span>
+                      </div>
+                      <div class="card-discount">
+                        23.000.000 <span class="unit">đ</span>
+                      </div>
+                  </div>
+                  <div class="card-stars">
+                    <span> <i class="fas fa-star text-warning"></i></span>
+                    <span> <i class="fas fa-star text-warning"></i></span>
+                    <span> <i class="fas fa-star text-warning"></i></span>
+                    <span> <i class="fas fa-star text-warning"></i></span>
+                    <span> <i class="fas fa-star  text-dark"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card">
+                <div class="card-img"><a href="#">
+                    <img src="../image/index/637076224208985186_vivo-y19-dd.jpg" class="" alt="..."></a>
+                </div>
+                <div class="card-content">
+                  <div class="card-title">
+                    <a href="#">Iphone 12 64 GBIphone 12 64 GBIphone 12 64 GB</a></div>
+                  <div class="card-price">
+                    <span>
+                      <div class="card-count">19.990.000 <span class="unit">đ</span>
+                      </div>
+                      <div class="card-discount">
+                        23.000.000 <span class="unit">đ</span>
+                      </div>
+                  </div>
+                  <div class="card-stars">
+                    <span> <i class="fas fa-star text-warning"></i></span>
+                    <span> <i class="fas fa-star text-warning"></i></span>
+                    <span> <i class="fas fa-star text-warning"></i></span>
+                    <span> <i class="fas fa-star text-warning"></i></span>
+                    <span> <i class="fas fa-star  text-dark"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Hang ket qua-->
+        <div class="row-content">
+          <div class="row">
+            <div class="col-4">
+              <div class="card">
+                <div class="card-img"><a href="#">
+                    <img src="../image/index/637076224208985186_vivo-y19-dd.jpg" class="" alt="..."></a>
+                </div>
+                <div class="card-content">
+                  <div class="card-title">
+                    <a href="#">Iphone 12 64 GBIphone 12 64 GBIphone 12 64 GB</a></div>
+                  <div class="card-price">
+                    <span>
+                      <div class="card-count">19.990.000 <span class="unit">đ</span>
+                      </div>
+                      <div class="card-discount">
+                        23.000.000 <span class="unit">đ</span>
+                      </div>
+                  </div>
+                  <div class="card-stars">
+                    <span> <i class="fas fa-star text-warning"></i></span>
+                    <span> <i class="fas fa-star text-warning"></i></span>
+                    <span> <i class="fas fa-star text-warning"></i></span>
+                    <span> <i class="fas fa-star text-warning"></i></span>
+                    <span> <i class="fas fa-star  text-dark"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card">
+                <div class="card-img"><a href="#">
+                    <img src="../image/index/637076224208985186_vivo-y19-dd.jpg" class="" alt="..."></a>
+                </div>
+                <div class="card-content">
+                  <div class="card-title">
+                    <a href="#">Iphone 12 64 GBIphone 12 64 GBIphone 12 64 GB</a></div>
+                  <div class="card-price">
+                    <span>
+                      <div class="card-count">19.990.000 <span class="unit">đ</span>
+                      </div>
+                      <div class="card-discount">
+                        23.000.000 <span class="unit">đ</span>
+                      </div>
+                  </div>
+                  <div class="card-stars">
+                    <span> <i class="fas fa-star text-warning"></i></span>
+                    <span> <i class="fas fa-star text-warning"></i></span>
+                    <span> <i class="fas fa-star text-warning"></i></span>
+                    <span> <i class="fas fa-star text-warning"></i></span>
+                    <span> <i class="fas fa-star  text-dark"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card">
+                <div class="card-img"><a href="#">
+                    <img src="../image/index/637076224208985186_vivo-y19-dd.jpg" class="" alt="..."></a>
+                </div>
+                <div class="card-content">
+                  <div class="card-title">
+                    <a href="#">Iphone 12 64 GBIphone 12 64 GBIphone 12 64 GB</a></div>
+                  <div class="card-price">
+                    <span>
+                      <div class="card-count">19.990.000 <span class="unit">đ</span>
+                      </div>
+                      <div class="card-discount">
+                        23.000.000 <span class="unit">đ</span>
+                      </div>
+                  </div>
+                  <div class="card-stars">
+                    <span> <i class="fas fa-star text-warning"></i></span>
+                    <span> <i class="fas fa-star text-warning"></i></span>
+                    <span> <i class="fas fa-star text-warning"></i></span>
+                    <span> <i class="fas fa-star text-warning"></i></span>
+                    <span> <i class="fas fa-star  text-dark"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Hang ket qua-->
+        <div class="row-content">
+          <div class="row">
+            <div class="col-4">
+              <div class="card">
+                <div class="card-img"><a href="#">
+                    <img src="../image/index/637076224208985186_vivo-y19-dd.jpg" class="" alt="..."></a>
+                </div>
+                <div class="card-content">
+                  <div class="card-title">
+                    <a href="#">Iphone 12 64 GBIphone 12 64 GBIphone 12 64 GB</a></div>
+                  <div class="card-price">
+                    <span>
+                      <div class="card-count">19.990.000 <span class="unit">đ</span>
+                      </div>
+                      <div class="card-discount">
+                        23.000.000 <span class="unit">đ</span>
+                      </div>
+                  </div>
+                  <div class="card-stars">
+                    <span> <i class="fas fa-star text-warning"></i></span>
+                    <span> <i class="fas fa-star text-warning"></i></span>
+                    <span> <i class="fas fa-star text-warning"></i></span>
+                    <span> <i class="fas fa-star text-warning"></i></span>
+                    <span> <i class="fas fa-star  text-dark"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card">
+                <div class="card-img"><a href="#">
+                    <img src="../image/index/637076224208985186_vivo-y19-dd.jpg" class="" alt="..."></a>
+                </div>
+                <div class="card-content">
+                  <div class="card-title">
+                    <a href="#">Iphone 12 64 GBIphone 12 64 GBIphone 12 64 GB</a></div>
+                  <div class="card-price">
+                    <span>
+                      <div class="card-count">19.990.000 <span class="unit">đ</span>
+                      </div>
+                      <div class="card-discount">
+                        23.000.000 <span class="unit">đ</span>
+                      </div>
+                  </div>
+                  <div class="card-stars">
+                    <span> <i class="fas fa-star text-warning"></i></span>
+                    <span> <i class="fas fa-star text-warning"></i></span>
+                    <span> <i class="fas fa-star text-warning"></i></span>
+                    <span> <i class="fas fa-star text-warning"></i></span>
+                    <span> <i class="fas fa-star  text-dark"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card">
+                <div class="card-img"><a href="#">
+                    <img src="../image/index/637076224208985186_vivo-y19-dd.jpg" class="" alt="..."></a>
+                </div>
+                <div class="card-content">
+                  <div class="card-title">
+                    <a href="#">Iphone 12 64 GBIphone 12 64 GBIphone 12 64 GB</a></div>
+                  <div class="card-price">
+                    <span>
+                      <div class="card-count">19.990.000 <span class="unit">đ</span>
+                      </div>
+                      <div class="card-discount">
+                        23.000.000 <span class="unit">đ</span>
+                      </div>
+                  </div>
+                  <div class="card-stars">
+                    <span> <i class="fas fa-star text-warning"></i></span>
+                    <span> <i class="fas fa-star text-warning"></i></span>
+                    <span> <i class="fas fa-star text-warning"></i></span>
+                    <span> <i class="fas fa-star text-warning"></i></span>
+                    <span> <i class="fas fa-star  text-dark"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+ <!-- pagination -->
+ <div class="row">
+  <div class="col-12 d-flex justify-content-end">
+    <nav aria-label="...">
+      <ul class="pagination">
+        <li class="page-item disabled">
+          <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Trở về</a>
+        </li>
+        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+        <li class="page-item " aria-current="page">
+          <a class="page-link" href="#">2 </a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">Tiếp</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+      </div>
+    </div>
+  </div>
+ 
+  
+
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class=" bg-dark footerA text-center d-flex justify-content-center">
+    <div class="container pt-4">
+      <div class="row">
+        <div class="ml-5 col-3">
+          <div class="block">
+            <p>PHƯƠNG THỨC THANH TOÁN</p>
+               <p><img class="icon m-2"
+            style="background-color: white; border: solid 1.1px; border-color: rgba(88, 87, 85, 0.233) ; border-radius: 5px; padding: 5px 1px 5.5px 1px;"
+            src="footer_phuongThucThanhtoan/vietcombank.svg" width="53px">
+        <img class="icon m-2"
+            style="background-color: white;border: solid 1.1px; border-color: rgba(88, 87, 85, 0.233) ;border-radius: 5px; padding: 1px 12px 1px 13px;"
+            src="footer_phuongThucThanhtoan/momo.png" width="55px">
+        <img class="icon m-2"
+            style="background-color: white;border: solid 1.1px; border-color: rgba(88, 87, 85, 0.233) ;border-radius: 5px; padding: 1.5px 0px 1.5px 0px;"
+            src="footer_phuongThucThanhtoan/agribank.png" width="53px">
+        <img class="icon m-2"
+            style="background-color: white;border: solid 1.1px; border-color: rgba(88, 87, 85, 0.233) ;border-radius: 5px; padding: 4px 1px 3px 1px;"
+            src="footer_phuongThucThanhtoan/BIDV.png" width="53px">
+        <img class="icon m-2" src="footer_phuongThucThanhtoan/visa.svg">
+        <img class="icon m-2" src="footer_phuongThucThanhtoan/cash.svg">
+    </p>
+          </div><p style="margin-top: -10px; font-size: 1em;">lượt truy cập</p>
+          <p style="margin-top: -20px;"><strong id="luottrruycap">9472</strong></p>
+          <script>
+            var myVar = setInterval(myTimer, 1000);
+            function myTimer() {
+              document.getElementById("luottrruycap").innerHTML =
+                Math.floor(Math.random() * 10000) + 9999;
+            }
+          </script>
+        </div>
+
+
+
+        <div class="col-5">
+          <div class="PhoneSupport">
+            <p>HỖ TRỢ KHÁCH HÀNG</p>
+            <p> Gọi mua hàng: <strong>1800.1099</strong> (7:30 - 22:00)</p>
+            <p> Gọi khiếu nại: <strong class="ml-1">1800.1079</strong> (8:00 - 21:30)</p>
+            <p> Gọi bảo hành: <strong>1800.1069</strong> (8:00 - 21:00)</p>
+          </div>
+          <img width="30%" src="footer_phuongThucThanhtoan/BoCongThuong.png">
+          <img width="10%" src="footer_phuongThucThanhtoan/BoCongThuong2.png">
+        </div>
+
+
+        <div class="col-3 hoptac">
+          <p> HỢP TÁC VÀ LIÊN KẾT</p>
+          <p> <a href="">Chính sách bảo hành</a></p>
+          <p><a href=""> Chính sách đổi trả</a></p>
+          <p> <a href="">Tuyển dụng</a></p>
+          <p class="footerIcon">
+              <i style="color:rgb(13, 107, 214);" class="fa fa-facebook-official" aria-hidden="true"></i>
+              <i style="color: rgb(214, 18, 18);" class="fa fa-youtube-play mx-2" aria-hidden="true"></i>
+              <i style="color: rgb(144, 42, 228);" class="fa fa-linkedin-square" aria-hidden="true"></i>
+              <i style="color:rgb(10, 146, 146);" class="fa fa-twitter mx-2" aria-hidden="true"></i>
+            </p>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <p class="description">© 1992. Công ty cổ phần MobileShop. GPMXH: 238/GP-BTTTT do Bộ Thông
+              Tin và
+              Truyền Thông cấp ngày 04/06/1990. Địa chỉ: 128 Trần Quang Khải, P. Tân Định, Q.1, TP.Hồ Chí Minh. Điện
+              thoại: 028 38125960. Email: cskh@mobileShop.com. Chịu trách nhiệm nội dung: Huỳnh Văn Tốt</p>
+          </div>
+        </div>
+
+      </div>
+      <!-- /.container -->
+  </footer>
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script>
+    $(document).ready(function () {
+
+      $("#owl-demo").owlCarousel({
+        navigation: true
+      });
+
+    });
+  </script>
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

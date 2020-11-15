@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Giỏ hàng</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/cssGioHang_checkOut/cart.css">
+    <link rel="stylesheet" href="../css/style-dang.css">
+</head>
+
+<style>
+    .fa-trash {
+        color: rgb(226, 13, 13);
+    }
+
+    .fa-sync {
+        color: rgb(18, 195, 18);
+    }
+
+    .tongCong {
+        display: inline;
+    }
+
+    .colorPrice {
+        color: #ee370a;
+        padding-left: 10px;
+    }
+</style>
+
+<body>
+    <div class="zalo-chat-widget" data-oaid="783045327304238665" data-welcome-message="Rất vui khi được hỗ trợ bạn!"
+        data-autopopup="0" data-width="350" data-height="420"></div>
+
+    <script src="https://sp.zalo.me/plugins/sdk.js"></script>
+    <!-- // thanh menu -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-menu fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html"><i class="fa fa-mobile-alt"></i> Mobile Shop</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="input-group md-form form-sm form-2 pl-5 pr-5">
+                <input class="form-control my-0 py-1 lime-border" type="text" placeholder="Bạn tìm gì..."
+                    aria-label="Search">
+                <div class="input-group-append">
+                    <span class="input-group-text lime lighten-2" id="basic-text1"><i class="fas fa-search text-grey"
+                            aria-hidden="true"></i></span>
+                </div>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto pt-3">
+                    <li class="nav-item ">
+                        <a href="../LienHe/Contact.html">
+                            <div class="item-menu">
+
+                                <i class="fas fa-phone-square-alt"></i>
+                                <div class="item-menu-text">
+                                    <p>Liên hệ </p>
+                                </div>
+
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item"><a href="#">
+                            <div class="item-menu">
+                                <i class="fas fa-money-check"></i>
+                                <div class="item-menu-text">
+                                    <p>Kiểm tra đơn hàng </p>
+                                </div>
+
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item"><a href="../Login_Page/sign-in/signIn.html">
+                            <div class="item-menu">
+                                <i class="fas fa-user"></i>
+                                <div class="item-menu-text">
+                                    <p>Đăng nhập</p>
+                                </div>
+
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item"><a href="../GioHang&checkout_Page/gioHang.html">
+                            <div class="item-menu">
+                                <i class="fas fa-shopping-cart"></i>
+                                <div class="item-menu-text">
+                                    <p>Giỏ hàng </p>
+                                </div>
+
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="filter-menu1">
+        <div class="">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../index.html">Trang chủ</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Giỏ hàng</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+
+
+    <section class="pt-5 pb-5 ">
+        <div class="container">
+            <div class="row w-100">
+                <div class="col-lg-12 col-md-12 col-12">
+                    <h3 class="display-5 mb-2 text-center">Giỏ hàng</h3>
+                    <p class="mb-5 text-center">
+                        <i class="text-info font-weight-bold">3</i> sản phẩm trong giỏ hàng của bạn</p>
+                    <table id="shoppingCart" style="width: 85%;" class="table table-condensed m-auto">
+                        <thead>
+                            <tr>
+                                <th style="width:60%">Tên sản phẩm</th>
+                                <th style="width:15%">Giá</th>
+                                <th style="width: 25%;" class="text-center">Số lượng</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-th="Product">
+                                    <div class="row">
+                                        <div class="col-md-3 text-left">
+                                            <img src="../image/Product/IPhone8.jpg" alt=""
+                                                class="img-fluid d-none d-md-block rounded mb-2 shadow ">
+                                        </div>
+                                        <div class="col-md-9 text-left mt-sm-2">
+                                            <h4>Iphone 8S</h4>
+                                            <p class="font-weight-light">Bộ nhớ 512GB</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td data-th="Price"
+                                    style="color: red;font-size: 20px; min-width: 100px;font-weight: 600;">9.000.000
+                                    <span class="unit">đ</span>
+                                </td>
+                                <td data-th="Quantity">
+                                    <div class="" style="margin-left: 90px;">
+                                        <button class="btn-cart d-block d-inline float-left"><i
+                                                class="fas fa-minus"></i></button>
+                                        <input type="number" class="text-center inputnumber d-inline float-left" min='1'
+                                            value="1">
+                                        <button class="btn-cart d-block d-inline float-left"><i
+                                                class="fas fa-plus"></i></button>
+                                    </div>
+                                </td>
+                                <td class="actions" data-th="">
+                                    <div class="text-right">
+
+                                        <!-- Button trigger modal -->
+                                        <button class="btn btn-white border-secondary bg-white btn-md mb-2"
+                                            data-toggle="modal" data-target="#sp1">
+                                            <i class="fa fa-trash"></i>
+                                        </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="sp1" tabindex="-1" role="dialog" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title">Xóa sản phẩm này ?</h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-dismiss="modal">Hủy</button>
+                                                        <button type="button" data-dismiss="modal"
+                                                            class="btn btn-danger">Xóa</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-th="Product">
+                                    <div class="row">
+                                        <div class="col-md-3 text-left">
+                                            <img src="../image/Product/samsung.png" alt=""
+                                                class="img-fluid d-none d-md-block rounded mb-2 shadow ">
+                                        </div>
+                                        <div class="col-md-9 text-left mt-sm-2">
+                                            <h4>Oppo A8 Plus</h4>
+                                            <p class="font-weight-light">Phiên bản limited edition</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td data-th="Price"
+                                    style="color: red;font-size: 20px; min-width: 100px;font-weight: 600;">13.000.000
+                                    <span class="unit">đ</span>
+                                </td>
+                                <td data-th="Quantity">
+                                    <div class="" style="margin-left: 90px;">
+                                        <button class="btn-cart d-block d-inline float-left"><i
+                                                class="fas fa-minus"></i></button>
+                                        <input type="number" class="text-center inputnumber d-inline float-left" min='1'
+                                            value="1">
+                                        <button class="btn-cart d-block d-inline float-left"><i
+                                                class="fas fa-plus"></i></button>
+                                    </div>
+                                </td>
+                                <td class="actions" data-th="">
+                                    <div class="text-right">
+
+                                        <button class="btn btn-white border-secondary bg-white btn-md mb-2"
+                                            data-toggle="modal" data-target="#sp1">
+                                            <i class="fa fa-trash"></i>
+                                        </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="sp1" tabindex="-1" role="dialog" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title">Xóa sản phẩm này ?</h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-dismiss="modal">Hủy</button>
+                                                        <button type="button" data-dismiss="modal"
+                                                            class="btn btn-danger">Xóa</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-th="Product">
+                                    <div class="row">
+                                        <div class="col-md-3 text-left">
+                                            <img src="../image/Product/sony.jpg" style="height: 70%;" alt=""
+                                                class="img-fluid d-none d-md-block rounded mb-2 shadow ">
+                                        </div>
+                                        <div class="col-md-9 text-left mt-sm-2">
+                                            <h4>Sony Xperia</h4>
+                                            <p class="font-weight-light">Phiên bản quốc tế</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td data-th="Price"
+                                    style="color: red;font-size: 20px; min-width: 100px;font-weight: 600;">2.000.000
+                                    <span class="unit">đ</span>
+                                </td>
+                                <td data-th="Quantity">
+                                    <div class="" style="margin-left: 90px;">
+                                        <button class="btn-cart d-block d-inline float-left"><i
+                                                class="fas fa-minus"></i></button>
+                                        <input type="number" class="text-center inputnumber d-inline float-left" min='1'
+                                            value="1">
+                                        <button class="btn-cart d-block d-inline float-left"><i
+                                                class="fas fa-plus"></i></button>
+                                    </div>
+                                </td>
+                                <td class="actions" data-th="">
+                                    <div class="text-right">
+
+                                        <button class="btn btn-white border-secondary bg-white btn-md mb-2"
+                                            data-toggle="modal" data-target="#sp1">
+                                            <i class="fa fa-trash"></i>
+                                        </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="sp1" tabindex="-1" role="dialog" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title">Xóa sản phẩm này ?</h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-dismiss="modal">Hủy</button>
+                                                        <button type="button" data-dismiss="modal"
+                                                            class="btn btn-danger">Xóa</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="float-right text-right">
+                        <div class="mb-4">
+                            <h4 class="tongCong ">Tổng cộng</h4>
+                        </div>
+                        <h4 class="colorPrice tongCong">22.000.000VNĐ</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4 d-flex align-items-center">
+                <div class="col-sm-6 order-md-2 text-right">
+                    <a href="../GioHang&checkout_Page/checkout.html" class="btn btn-primary mb-4 btn-lg pl-5 pr-5"
+                        style="margin-right: 50px;">Xác nhận thanh toán</a>
+                </div>
+
+                <div class="col-sm-6 mb-3 mb-m-1 order-md-1 text-md-left">
+                    <a href="../index.html">
+                        <i class="fas fa-arrow-left mr-2"></i> Tiếp tục mua hàng</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class=" bg-dark footerA text-center d-flex justify-content-center">
+        <div class="container pt-4">
+            <div class="row">
+                <div class="ml-5 col-3">
+                    <div class="block">
+                        <p>PHƯƠNG THỨC THANH TOÁN</p>
+                        <p><img class="icon m-2" src="footer_phuongthuocThanhtoan/cash.svg" width="54">
+                            <img class="icon  m-2" src="footer_phuongthuocThanhtoan/installment.svg" width="54">
+                            <img class="icon  m-2" src="footer_phuongthuocThanhtoan/internet-banking.svg" width="54">
+                            <img class="icon  m-2" src="footer_phuongthuocThanhtoan/jcb.svg" width="54">
+                            <img class="icon  m-2" src="footer_phuongthuocThanhtoan/mastercard.svg" width="54">
+                            <img class="icon  m-2" src="footer_phuongthuocThanhtoan/visa.svg" width="54">
+                        </p>
+                    </div>
+                </div>
+
+
+
+                <div class="col-5">
+                    <div class="PhoneSupport">
+                        <p>HỖ TRỢ KHÁCH HÀNG</p>
+                        <p> Gọi mua hàng: <strong>1800.1099</strong> (7:30 - 22:00)</p>
+                        <p> Gọi khiếu nại: <strong class="ml-1">1800.1079</strong> (8:00 - 21:30)</p>
+                        <p> Gọi bảo hành: <strong>1800.1069</strong> (8:00 - 21:00)</p>
+                    </div>
+                    <img width="30%" src="footer_phuongthuocThanhtoan/BoCongThuong.png">
+                    <img width="10%" src="footer_phuongthuocThanhtoan/BoCongThuong2.png">
+                </div>
+
+
+                <div class="col-3 hoptac">
+                    <p> HỢP TÁC VÀ LIÊN KẾT</p>
+                    <p> <a href="">Chính sách bảo hành</a></p>
+                    <p><a href=""> Chính sách đổi trả</a></p>
+                    <p> <a href="">Tuyển dụng</a></p>
+                    <p class="footerIcon">
+                        <i style="color:rgb(13, 107, 214);" class="fa fa-facebook-official" aria-hidden="true"></i>
+                        <i style="color: rgb(214, 18, 18);" class="fa fa-youtube-play mx-2" aria-hidden="true"></i>
+                        <i style="color: rgb(144, 42, 228);" class="fa fa-linkedin-square" aria-hidden="true"></i>
+                        <i style="color:rgb(10, 146, 146);" class="fa fa-twitter mx-2" aria-hidden="true"></i>
+                    </p>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <p class="description">© 1992. Công ty cổ phần MobileShop. GPMXH: 238/GP-BTTTT do Bộ Thông
+                            Tin và
+                            Truyền Thông cấp ngày 04/06/1990. Địa chỉ: 128 Trần Quang Khải, P. Tân Định, Q.1, TP.Hồ Chí
+                            Minh. Điện
+                            thoại: 028 38125960. Email: cskh@mobileShop.com. Chịu trách nhiệm nội dung: Huỳnh Văn Tốt
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /.container -->
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../css/cssProduct/chitietsanpham.css">
+  <link href="../css/style-dang.css" rel="stylesheet">
+  <link href="../css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
+
+  <title>Chi tiết sản phẩm</title>
+</head>
+
+<body>
+
+
+  <script src="https://sp.zalo.me/plugins/sdk.js"></script>
+  <!-- Thanh menu tim kiem -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-menu fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html"><i class="fa fa-mobile-alt"></i> Mobile Shop</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="input-group md-form form-sm form-2 pl-5 pr-5">
+        <input class="form-control my-0 py-1 lime-border" type="text" placeholder="Bạn tìm gì..." aria-label="Search">
+        <div class="input-group-append">
+          <span class="input-group-text lime lighten-2" id="basic-text1"><i class="fas fa-search text-grey"
+              aria-hidden="true"></i></span>
+        </div>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto pt-3">
+          <li class="nav-item ">
+            <a href="../LienHe/Contact.html">
+              <div class="item-menu">
+
+                <i class="fas fa-phone-square-alt"></i>
+                <div class="item-menu-text">
+                  <p>
+                    Liên hệ & Hỗ trợ </p>
+                </div>
+
+              </div>
+            </a>
+          </li>
+          <li class="nav-item"><a href="#">
+              <div class="item-menu">
+                <i class="fas fa-money-check"></i>
+                <div class="item-menu-text">
+                  <p>Kiểm tra đơn hàng </p>
+                </div>
+
+              </div>
+            </a>
+          </li>
+          <li class="nav-item"><a href="../Login_Page/sign-in/signIn.html">
+              <div class="item-menu">
+                <i class="fas fa-user"></i>
+                <div class="item-menu-text">
+                  <p>Đăng nhập</p>
+                </div>
+
+              </div>
+            </a>
+          </li>
+          <li class="nav-item"><a href="../GioHang&checkout_Page/gioHang.html">
+              <div class="item-menu" id="cart">
+                <i class="fas fa-shopping-cart"></i>
+                <div class="item-menu-text">
+                  <p>Giỏ hàng </p>
+                </div>
+                <label class="quantity-cart" id="quantity-cart">0</label>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </nav>
+
+
+  <!-- Thanh menu loc du lieu va sap xep-->
+  <div class="filter-menu">
+    <div class="container">
+      <div class="row">
+        <!--Noi dung loc du lieu-->
+        <div class="col-6 alpha">
+          <ul class="list-menu">
+            <li class="item-menu" id="trademark">
+              <div class="header"><a href="#">Thương hiệu <i class="fas fa-caret-down"></i></a>
+              </div>
+              <div class="content-dropdown" id="content-trademark">
+                <ul class="list-menu">
+                  <div class="row">
+                    <div class="col-4">
+                      <li class="item-menu"><a href="#">Apple</a></li>
+                      <li class="item-menu"><a href="#">Samsung</a></li>
+                      <li class="item-menu"><a href="#">OPPO</a></li>
+                    </div>
+                    <div class="col-4">
+                      <li class="item-menu"><a href="#">Xiaomi</a></li>
+                      <li class="item-menu"><a href="#">Vivo</a></li>
+                      <li class="item-menu"><a href="#">Huawei</a></li>
+                    </div>
+                    <div class="col-4">
+                      <li class="item-menu"><a href="#">Realme</a></li>
+                      <li class="item-menu"><a href="#">Nokia</a></li>
+                      <li class="item-menu"><a href="#">Hãng khác</a></li>
+                    </div>
+                  </div>
+                </ul>
+              </div>
+            </li>
+            <li class="item-menu" id="rateprice">
+              <div class="header"><a href="#">Mức giá <i class="fas fa-caret-down"></i></a>
+              </div>
+              <div class="content-dropdown" id="content-rateprice">
+                <ul class="list-menu">
+                  <div class="row">
+                    <div class="col-4">
+                      <li class="item-menu"><a href="#">Dưới 1 triệu</a></li>
+                      <li class="item-menu"><a href="#">Từ 1 đến 2 triệu</a></li>
+                      <li class="item-menu"><a href="#">Từ 2 đến 3 triệu</a></li>
+                    </div>
+                    <div class="col-4">
+                      <li class="item-menu"><a href="#">Từ 3 đến 5 triệu</a></li>
+                      <li class="item-menu"><a href="#">Từ 5 đến 7 triệu</a></li>
+                      <li class="item-menu"><a href="#">Từ 7 đến 9 triệu</a></li>
+                    </div>
+                    <div class="col-4">
+                      <li class="item-menu"><a href="#">Từ 9 đến 12 triệu</a></li>
+                      <li class="item-menu"><a href="#">Từ 12 đến 15 triệu</a></li>
+                      <li class="item-menu"><a href="#">Trên 15 triệu</a></li>
+                    </div>
+                  </div>
+                </ul>
+              </div>
+            </li>
+            <li class="item-menu" id="producttype">
+              <div class="header"><a href="#">Loại sản phẩm <i class="fas fa-caret-down"></i></a>
+              </div>
+              <div class="content-dropdown" id="content-producttype">
+                <ul class="list-menu">
+                  <div class="row">
+                    <div class="col-4">
+                      <li class="item-menu"><a href="#"> Điện thoại mới (232)</a></li>
+
+                    </div>
+                    <div class="col-4">
+                      <li class="item-menu"><a href="#">Điện thoại cũ (0)</a></li>
+                    </div>
+                    <div class="col-4">
+                    </div>
+                  </div>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!--Noi dung sap xep-->
+        <div class="col-6 beta">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="filter">
+    <div class="">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../index.html" style="color: rgb(0, 162, 255);">Trang chủ</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Chi tiết sản phẩm</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+
+
+  <!-- Page Content -->
+  <div class="container" style="max-width: 90%;">
+
+
+
+    <!-- Portfolio Item Heading -->
+    <h4 class="my-4">
+      <small>Điện thoại</small> Apple iPhone 12 - 256GB - Chính hãng VN/A
+    </h4>
+
+    <!-- Portfolio Item Row -->
+    <div class="row">
+
+      <div class=" col-md-7 ">
+        <div class="row space-img">
+          <img id="img" class="" src="../image/Product/i12black.png" alt="">
+          <a class="carousel-control-prev indexP" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span id="pre" class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next indexN" href="#carouselExampleControls" role="button" data-slide="next">
+            <span id="next" class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+        <div class="row space-img1">
+
+          <div class="col-md-2 col-sm-2 mb-2">
+            <span onclick="change('../image/Product/i12black.png')">
+              <img id="img1" class="img-fluid" src="../image/Product/i12black.png" alt="">
+            </span>
+          </div>
+
+          <div class="col-md-2 col-sm-2 mb-2">
+            <span onclick="change('../image/Product/i12blue.png')">
+              <img id="img2" class="img-fluid" src="../image/Product/i12blue.png" alt="">
+            </span>
+          </div>
+
+          <div class="col-md-2 col-sm-2 mb-2">
+            <span onclick="change('../image/Product/i12black.png')">
+              <img id="img3" class="img-fluid" src="../image/Product/i12black.png" alt="">
+            </span>
+          </div>
+
+          <div class="col-md-2 col-sm-2 mb-2">
+            <span onclick="change('../image/Product/i12blue.png')">
+              <img id="img4" class="img-fluid" src="../image/Product/i12blue.png" alt="">
+            </span>
+          </div>
+
+        </div>
+        <!-- /.row -->
+      </div>
+
+      <div class="col-md-5">
+        <div class="" style="margin-bottom: 80px;margin-top:15px">
+          <h3 class="my-3 bg-price color-price d-inline mr-5"><small class="color-bl"> </small>21.890.000 ₫</h3>
+          <h3 class="my-3 bg-price price d-inline"><small class="color-bl"> 24.890.000 ₫</h3></small>
+          <p class="block">Bảo hành 12 tháng chính hãng.</p>
+          <p class="block"> Đổi trả trong vòng 15 ngày đầu.</p>
+        </div>
+        <div class="block">
+          <p class="" style="font-size: 18px; font-style: normal;">Chọn màu ưa thích của bạn</p>
+
+          <div class="row">
+            <form>
+              <label for="btn1" id="label1" class="radio-inline space-radio text-center active"
+                onclick="change('../image/Product/i12black.png')">
+                <input id="btn1" type="radio" name="optradio" checked class="d-none">
+                <span class="font-color">Đen</span>
+              </label>
+
+              <label for="btn2" id="label2" class="radio-inline space-radio  text-center"
+                onclick="change('../image/Product/i12blue.png')">
+                <input id="btn2" type="radio" name="optradio" class="d-none">
+                <span class="font-color">Xanh</span>
+              </label>
+
+            </form>
+
+          </div>
+
+        </div>
+        <!-- <h4><strong>Khuyến mại</strong></h4>
+            <div class="space-l">
+              <ul class="ltsPromote">
+                <li class="space-t"><i class="color-price fa fa-gift"></i>
+                  <a href="">Máy mới 100% chính hãng Apple Việt Nam - Hoanghamobile nhà bán lẻ ủy quyền chính thức của
+                    Apple tại Việt Nam</a>
+                  </li>
+                  <li class="space-t"><i class="color-price fa fa-gift"></i>
+                    <a href="">Khuyến mại mua Tai nghe Apple AirPods 2 - Chính hãng VN/A - Case sạc thường (MV7N2VN/A) với
+                      giá chỉ 3.350.000đ</a>
+                    </li>
+                    <li class="space-t"><i class="color-price fa fa-gift"></i>
+                      <a href="">Thu cũ - Lên đời giảm ngay 1.000.000đ (trừ thẳng vào giá).</a>
+                    </li>
+                    <li class="space-t">
+                      <i class="color-price fa fa-gift"></i>
+                      <a href="">Khuyến mãi mua thêm Củ sạc 20W chính hãng với giá chỉ 490.000đ + Tai nghe Earpods lightning
+                        chính hãng với giá chỉ 490.000đ</a>
+                </li>
+              </ul>
+            </div> -->
+
+
+
+        <div class="row">
+          <div class="col-sm-7">
+            <button type="button" class="btnMua btn btn-primary btn-lg btn-block" onclick="addcart('quantity-cart')">
+              <i class="fas fa-cart-plus" style="color: white;"></i>
+              THÊM VÀO GIỎ HÀNG
+            </button>
+          </div>
+          <div class="col-sm-5">
+            <a href="../GioHang&checkout_Page/gioHang.html">
+              <button type="button" class="btnMua btn btn-danger btn-lg btn-block">
+                ĐẶT HÀNG
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- /.row -->
+
+  <!-- Related Projects Row -->
+
+
+  </div>
+  <!-- /.container -->
+  <hr style="width: 80%;">
+
+  <!--Information Product-->
+  <div class="container">
+    <!-- Content here -->
+    <div class="row">
+      <div class="col-sm-8">
+        <div id="f-w" class="hegthTxt">
+
+          <h3 class="center-txt">Đánh giá chi tiết iPhone 12</h3>
+          <h5 style="font-size: 18px;">Chiếc iPhone mạnh mẽ nhất, lớn nhất,zz
+            thời lượng pin tốt nhất đã xuất hiện.
+            <span class="text-primary">Iphone 12</span> chắc chắn
+            là chiếc điện thoại mà ai cũng ao ước khi sở hữu những tính
+            năng xuất sắc nhất, đặc biệt là camera và pin.</h5>
+          <img class="sizeImg" src="../image/imgProduct/iphone-11-pro-max-4.jpg" alt="">
+          <div class="text-center"><button id="send1" class="btn btn-primary btn-center" style="margin-top: 20px;">Xem
+              thêm</button></div>
+          <div id="formReview1">
+            <div>
+              <h4 class="space-t">Sức mạnh hàng đầu của Pro</h4>
+              <p>Được trang bị bộ vi xử lý <span class="text-primary"> A13 Bionic</span>,
+                iPhone 11 Pro Max tự tin thể hiện đẳng cấp hiệu năng “Pro”.
+                So với thế hệ trước, Apple A13 Bionic nhanh hơn 20% và tiêu thụ năng lượng ít hơn tới 40% cả về CPU lẫn
+                GPU. iPhone 11 Pro Max mạnh mẽ vượt trội khi đặt cạnh bất cứ đối thủ nào trên thị trường hiện nay. Mọi
+                tác
+                vụ kể cả những tựa game nặng nhất cũng đều được thể hiện trơn tru,
+                mượt mà trên iPhone 11 Pro Max 64GB.</p>
+              <img class="sizeImg" src="../image/imgProduct/iPhone-112.jpg" alt="">
+            </div>
+            <div>
+              <h4 class="space-t">Tác phẩm nghệ thuật đích thực</h4>
+              <p>Không chỉ đơn thuần là một chiếc điện thoại, iPhone 11 Pro Max là một tác phẩm nghệ thuật đích thực. Sự
+                kết hợp hoàn hảo giữa những vật liệu cao cấp là khung thép không gỉ và hai mặt kính cường lực giúp
+                iPhone
+                11 Pro Max rất sang trọng, đẳng cấp. iPhone mới đã chuyển sang mặt lưng sơn nhám độc đáo, đẹp mắt hơn
+                đồng
+                thời không bị bám bẩn hay dấu vân tay. iPhone Pro Max có 4 màu thời thượng là Vàng, Xám không gian, Bạc
+                và
+                Xanh Midnight. Dù là một chiếc điện thoại màn hình lớn,
+                nhưng sự hoàn thiện cao cấp giúp iPhone 11 Pro Max vẫn dễ dàng cầm nắm và thao tác.</p>
+              <img class="sizeImg" src="../image/imgProduct/iphone-13.jpg" alt="">
+            </div>
+          </div>
+          <div class="text-center"><button id="close" class="btn btn-primary btn-center"
+              style="display: none;">Đóng</button></div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <table class="table">
+          <h4>Thông số kĩ thuật</h4>
+          <tbody>
+            <tr>
+              <th scope="row">Màn hình:</th>
+              <td>
+                <p>Độ phân giải: 1284 x 2778 pixels</p>
+                <p>Công nghệ màn hình: Super Retina XDR OLED</p>
+              </td>
+
+
+            </tr>
+            <tr>
+              <th scope="row">Hệ điều hành:</th>
+              <td>IOS 14</td>
+
+            </tr>
+            <tr>
+              <th scope="row">Camera sau:</th>
+              <td>
+                <p>Độ phân giải: 12 MP + 12 MP + 12 MP + TOF</p>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Camera trước:</th>
+              <td>
+                Độ phân giải: 12 MP
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">CPU:</th>
+              <td>
+                <p>Chipset (hãng SX CPU): Apple A14 Bionic (5 nm)</p>
+                <p>Tốc độ CPU: Hexa-core</p>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Bộ nhớ:</th>
+              <td>
+                <p>Bộ nhớ trong: 256 GB</p>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Kết nối:</th>
+              <td>
+                <p>Mạng di động: Hỗ trợ 5G</p>
+                <p>Wifi: Wi-Fi 802.11 a/b/g/n/ac/6, dual-band, hotspot</p>
+                <p>Bluetooth: 5.0, A2DP, LE</p>
+                <p>Cổng kết nối/sạc: Lightning, USB 2.0</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+  <hr width="80%">
+  <!--/information product-->
+
+  <!--evualuate-->
+
+  <div style="width: 80%;" class="container evalueH">
+    <h3 style="font-size: 1.5em;" class="text-center">Đánh giá, bình luận sản phẩm</h3>
+
+    <div class="row reviews_detail">
+
+      <div class="diem  col-md-3 text-center">
+        <h3 style="font-size: 1.2em; margin-top: 10%;">Sao trung bình</h3>
+        <p class="averageRatings">5 <i class="fa fa-star checked" style="font-size:30px"></i>
+        </p>
+      </div>
+      <div class="diem text-center col-md-6">
+        <div>
+          <div class="side row mt-3">
+            <div class="col-sm-2">
+              5 <i class="fa fa-star checked pp"></i>
+            </div>
+            <div class="col-sm-6">
+              <div class="progress space-t5">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 100%" aria-valuenow="75"
+                  aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <p>6 đánh giá</p>
+            </div>
+          </div>
+          <div style="margin-top: -15px;" class="side row">
+            <div class="col-sm-2">
+              4 <i class="fa fa-star checked"></i>
+            </div>
+            <div class="col-sm-6">
+              <div class="progress space-t5">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 0%" aria-valuenow="75"
+                  aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <p>0 đánh giá</p>
+            </div>
+          </div>
+          <div style="margin-top: -15px;" class="side row">
+            <div class="col-sm-2">
+              3 <i class="fa fa-star checked"></i>
+            </div>
+            <div class="col-sm-6">
+              <div class="progress space-t5">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 0%" aria-valuenow="75"
+                  aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <p>0 đánh giá</p>
+            </div>
+          </div>
+          <div style="margin-top: -15px;" class="side row">
+            <div class="col-sm-2">
+              2 <i class="fa fa-star checked"></i>
+            </div>
+            <div class="col-sm-6">
+              <div class="progress space-t5">
+                <div class="progress-bar bg-warning" role="progressbar" style="width:0%" aria-valuenow="75"
+                  aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <p>0 đánh giá</p>
+            </div>
+          </div>
+          <div style="margin-top: -15px;" class="side row">
+            <div class="col-sm-2">
+              1 <i class="fa fa-star checked"></i>
+            </div>
+            <div class="col-sm-6">
+              <div class="progress space-t5">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 0%" aria-valuenow="75"
+                  aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <p>0 đánh giá</p>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+      <div class="danhgia text-center col-md-3">
+        
+        <h5 >Vui lòng chọn đánh giá</h5>
+        
+        <div class="stars row">
+          <form action="">
+            <div class="col-12">
+              <div class="align-star">
+                <input class="star star-5" id="star-5" type="radio" name="star" />
+                <label class="star star-5" for="star-5"></label>
+                <input class="star star-4" id="star-4" type="radio" name="star" />
+                <label class="star star-4" for="star-4"></label>
+                <input class="star star-3" id="star-3" type="radio" name="star" />
+                <label class="star star-3" for="star-3"></label>
+                <input class="star star-2" id="star-2" type="radio" name="star" />
+                <label class="star star-2" for="star-2"></label>
+                <input class="star star-1" id="star-1" type="radio" name="star" />
+                <label class="star star-1" for="star-1"></label>
+              </div>
+            </div>
+          </form>
+        </div>
+        <button type="submit" class="btn btn-danger guiDanhGia">Đánh giá của bạn</button>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!--end evualuate-->
+  <hr width="80%">
+  <!--Comment-->
+
+  <div class="col-lg-10 col-sm-10 mb-10" style="margin: auto;">
+    <h4 class="text-center">Bình luận</h4>
+    <div class="fb-comments fb_iframe_widget fb_iframe_widget_fluid_desktop" data-href="http://localhost"
+      data-numposts="20" data-width="900" data-mobile="Auto-detected" fb-xfbml-state="rendered"
+      fb-iframe-plugin-query="app_id=&amp;container_width=1108&amp;height=100&amp;href=http%3A%2F%2Flocalhost%3A3000%2FThanh-pho-phia-dong-tpHCM&amp;locale=en_GB&amp;mobile=false&amp;numposts=10&amp;sdk=joey&amp;version=v7.0&amp;width="
+      style="width: 100%;"><span style="vertical-align: bottom; width: 100%; height: 508px;">
+        <iframe name="f42318e5e4d28c" width="1000px" height="100px" data-testid="fb:comments Facebook Social Plugin"
+          title="fb:comments Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true"
+          scrolling="yes" allow="encrypted-media"
+          src="https://www.facebook.com/v7.0/plugins/comments.php?app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df16d35e09c52114%26domain%3Dgroup01-tintucbatdongsan.tk%26origin%3Dhttps%253A%252F%252Fgroup01-tintucbatdongsan.tk%252Ff1350c038078a8c%26relation%3Dparent.parent&amp;container_width=1108&amp;height=100&amp;href=http%3A%2F%2Flocalhost%3A3000%2FThanh-pho-phia-dong-tpHCM&amp;locale=en_GB&amp;mobile=false&amp;numposts=10&amp;sdk=joey&amp;version=v7.0&amp;width="
+          style="border: none; visibility: visible; width: 100%; height: 250px;overflow: scroll;" class=""></iframe>
+      </span>
+    </div>
+  </div>
+
+
+
+  <!--/comment-->
+
+
+
+  <!--footter-->
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class=" bg-dark footerA text-center d-flex justify-content-center">
+    <div class="container pt-4">
+      <div class="row">
+        <div class="ml-5 col-3">
+          <div class="block">
+            <p>PHƯƠNG THỨC THANH TOÁN</p>
+               <p><img class="icon m-2"
+            style="background-color: white; border: solid 1.1px; border-color: rgba(88, 87, 85, 0.233) ; border-radius: 5px; padding: 5px 1px 5.5px 1px;"
+            src="footer_phuongThucThanhtoan/vietcombank.svg" width="53px">
+        <img class="icon m-2"
+            style="background-color: white;border: solid 1.1px; border-color: rgba(88, 87, 85, 0.233) ;border-radius: 5px; padding: 1px 12px 1px 13px;"
+            src="footer_phuongThucThanhtoan/momo.png" width="55px">
+        <img class="icon m-2"
+            style="background-color: white;border: solid 1.1px; border-color: rgba(88, 87, 85, 0.233) ;border-radius: 5px; padding: 1.5px 0px 1.5px 0px;"
+            src="footer_phuongThucThanhtoan/agribank.png" width="53px">
+        <img class="icon m-2"
+            style="background-color: white;border: solid 1.1px; border-color: rgba(88, 87, 85, 0.233) ;border-radius: 5px; padding: 4px 1px 3px 1px;"
+            src="footer_phuongThucThanhtoan/BIDV.png" width="53px">
+        <img class="icon m-2" src="footer_phuongThucThanhtoan/visa.svg">
+        <img class="icon m-2" src="footer_phuongThucThanhtoan/cash.svg">
+    </p>
+          </div>
+          <p style="margin-top: -10px; font-size: 1em;">lượt truy cập</p>
+          <p style="margin-top: -20px;"><strong id="luottrruycap">9472</strong></p>
+          <script>
+            var myVar = setInterval(myTimer, 1000);
+            function myTimer() {
+              document.getElementById("luottrruycap").innerHTML =
+                Math.floor(Math.random() * 10000) + 9999;
+            }
+          </script>
+        </div>
+
+
+
+        <div class="col-5">
+          <div class="PhoneSupport">
+            <p>HỖ TRỢ KHÁCH HÀNG</p>
+            <p> Gọi mua hàng: <strong>1800.1099</strong> (7:30 - 22:00)</p>
+            <p> Gọi khiếu nại: <strong class="ml-1">1800.1079</strong> (8:00 - 21:30)</p>
+            <p> Gọi bảo hành: <strong>1800.1069</strong> (8:00 - 21:00)</p>
+          </div>
+          <img width="30%" src="footer_phuongThucThanhtoan/BoCongThuong.png">
+          <img width="10%" src="footer_phuongThucThanhtoan/BoCongThuong2.png">
+        </div>
+
+
+        <div class="col-3 hoptac">
+          <p> HỢP TÁC VÀ LIÊN KẾT</p>
+          <p> <a href="">Chính sách bảo hành</a></p>
+          <p><a href=""> Chính sách đổi trả</a></p>
+          <p> <a href="">Tuyển dụng</a></p>
+          <p class="footerIcon">
+            <i style="color:rgb(13, 107, 214);" class="fa fa-facebook-official" aria-hidden="true"></i>
+            <i style="color: rgb(214, 18, 18);" class="fa fa-youtube-play mx-2" aria-hidden="true"></i>
+            <i style="color: rgb(144, 42, 228);" class="fa fa-linkedin-square" aria-hidden="true"></i>
+            <i style="color:rgb(10, 146, 146);" class="fa fa-twitter mx-2" aria-hidden="true"></i>
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <p class="description">© 1992. Công ty cổ phần MobileShop. GPMXH: 238/GP-BTTTT do Bộ Thông
+              Tin và
+              Truyền Thông cấp ngày 04/06/1990. Địa chỉ: 128 Trần Quang Khải, P. Tân Định, Q.1, TP.Hồ Chí Minh. Điện
+              thoại: 028 38125960. Email: cskh@mobileShop.com. Chịu trách nhiệm nội dung: Huỳnh Văn Tốt</p>
+          </div>
+        </div>
+
+      </div>
+      <!-- /.container -->
+  </footer>
+
+  <!--/footter-->
+</body>
+
+
+<script src="../js/js_cuong/jsProduct/slideShow.js"></script>
+
+<script src="../js/js_dang/cart.js"></script>
+
+</html>
