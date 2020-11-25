@@ -11,9 +11,9 @@
 
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="../css/all.min.css">
-  <link rel="stylesheet" href="../css/style-dang.css">
   <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/form-validation.css">
+  <link rel="stylesheet" href="../css/style-dang.css">
 
   <style>
     .bd-placeholder-img {
@@ -33,7 +33,13 @@
 
     .price {
       color: red;
-    }
+    }.unit {
+  color: #d0021b;
+  font-weight: 700;
+  font-size: 17px;
+  text-decoration: underline;
+  font-style: italic;
+}
   </style>
 
 
@@ -58,26 +64,26 @@
         <input class="form-control my-0 py-1 lime-border" type="text" placeholder="Bạn tìm gì..." aria-label="Search">
         <div class="input-group-append">
           <span class="input-group-text lime lighten-2" id="basic-text1"><a href=""><i class="fas fa-search text-grey"
-              aria-hidden="true"></i></a></span>
+                aria-hidden="true"></i></a></span>
         </div>
       </div>
 
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto pt-3">
           <li class="nav-item ">
-            <a href="#">
+            <a href="../LienHe/Contact.html">
               <div class="item-menu">
 
                 <i class="fas fa-phone-square-alt"></i>
                 <div class="item-menu-text">
                   <p>
-Liên hệ & Hỗ trợ </p>
+                    Liên hệ & Hỗ trợ </p>
                 </div>
 
               </div>
             </a>
           </li>
-          <li class="nav-item"><a href="#">
+          <li class="nav-item"><a href="../Check-reicept_Page/check-receipt.html">
               <div class="item-menu">
                 <i class="fas fa-money-check"></i>
                 <div class="item-menu-text">
@@ -98,12 +104,12 @@ Liên hệ & Hỗ trợ </p>
             </a>
           </li>
           <li class="nav-item"><a href="../GioHang&checkout_Page/gioHang.html">
-              <div class="item-menu">
+              <div class="item-menu" id="cart">
                 <i class="fas fa-shopping-cart"></i>
                 <div class="item-menu-text">
                   <p>Giỏ hàng </p>
                 </div>
-
+                <label class="quantity-cart" id="quantity-cart">0</label>
               </div>
             </a>
           </li>
@@ -124,7 +130,7 @@ Liên hệ & Hỗ trợ </p>
       </nav>
     </div>
   </div>
-   
+
 
 
   <div class="container">
@@ -144,38 +150,35 @@ Liên hệ & Hỗ trợ </p>
           <li class="list-group-item d-flex justify-content-between lh-condensed">
             <div>
               <h6 class="my-0">Iphone 8S</h6>
-              <small class="text-muted">bộ nhớ 512GB</small>
             </div>
-            <span class=" price">9.000.000 VNĐ</span>
+            <span class=" price">9.000.000 <span class='unit'>đ</span></span>
           </li>
           <li class="list-group-item d-flex justify-content-between lh-condensed">
             <div>
               <h6 class="my-0"> Sony Xpreria</h6>
-              <small class="text-muted">Phiên bản quốc tế</small>
             </div>
-            <span class=" price">8.000.000 VNĐ</span>
+            <span class=" price">8.000.000 <span class='unit'>đ</span></span>
           </li>
           <li class="list-group-item d-flex justify-content-between lh-condensed">
             <div>
               <h6 class="my-0">Oppo A8 Plus</h6>
-              <small class="text-muted">Phiên bản limited edition</small>
             </div>
-            <span class=" price" style="color: red;">5.000.000 VNĐ</span>
+            <span class=" price" style="color: red;">5.000.000 <span class='unit'>đ</span></span>
           </li>
           <li class="list-group-item d-flex justify-content-between lh-condensed">
             <div>
               <h6 class="my-0">Phí giao hàng</h6>
               <!-- <small class="text-muted">Phiên bản limited edition</small> -->
             </div>
-            <span class=" price" style="color: red;">500.000 VNĐ</span>
+            <span class=" price" style="color: red;">500.000 <span class='unit'>đ</span></span>
           </li>
-         
+
           <li class="list-group-item d-flex justify-content-between">
             <span>Tổng cộng</span>
-            <strong class="price">19.000.000 VNĐ</strong>
+            <strong class="price">19.000.000 <span class='unit'>đ</span></strong>
           </li>
         </ul>
-
+        <!-- 
         <form class="card p-2">
           <div class="input-group">
             <input type="text" class="form-control" placeholder="Nhập mã giảm giá">
@@ -183,15 +186,16 @@ Liên hệ & Hỗ trợ </p>
               <button type="submit" class="btn btn-secondary">Áp dụng</button>
             </div>
           </div>
-        </form>
+        </form> -->
         <div class="row" style="margin-top: 20px;">
           <a href="../Bill_Page/Bill.html" style="margin: auto;">
-            <button class="btn btn-primary" style="width: 200px; text-align: center; margin: auto; " type="submit">Thanh
-            Toán</button>
+            <button class="btn btn-primary" style="padding: 5px 100px;
+            ; text-align: center; margin: auto; " type="submit">Thanh
+              Toán</button>
           </a>
         </div>
       </div>
-      
+
       <div class="col-md-8 order-md-1">
 
         <form class="needs-validation" action="../../Bill_Page/Bill.html" novalidate>
@@ -207,7 +211,7 @@ Liên hệ & Hỗ trợ </p>
             </div>
 
             <div class="custom-control custom-radio " style="margin-top: 20px;">
-              <input id="COD"  name="paymentMethod" type="radio" class="custom-control-input" onclick="hidenForm(this)"
+              <input id="COD" name="paymentMethod" type="radio" class="custom-control-input" onclick="hidenForm(this)"
                 required>
               <label class="custom-control-label " for="COD">Thanh toán khi nhận hàng</label>
             </div>
@@ -217,14 +221,14 @@ Liên hệ & Hỗ trợ </p>
             <div class="row">
               <div class="col-md-6 mb-3">
                 <label for="cc-name">Tên chủ tài khoản</label>
-                <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                <input type="text" class="form-control" id="cc-name" placeholder="Nhập tên của bạn" required>
                 <div class="invalid-feedback">
                   Không được để trống
                 </div>
               </div>
               <div class="col-md-6 mb-3">
                 <label for="cc-number">Số thẻ</label>
-                <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                <input type="text" class="form-control" id="cc-number" placeholder="Nhập số thẻ" required>
                 <div class="invalid-feedback">
                   Không được để trống
                 </div>
@@ -233,27 +237,26 @@ Liên hệ & Hỗ trợ </p>
             <div class="row">
               <div class="col-md-3 mb-3">
                 <label for="cc-expiration">Thời hạn</label>
-                <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                <input type="date" class="form-control" id="cc-expiration" placeholder=" " required>
                 <div class="invalid-feedback">
                   Không được để trống
                 </div>
               </div>
               <div class="col-md-3 mb-3">
                 <label for="cc-cvv">CVV</label>
-                <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                <input type="text" class="form-control" id="cc-cvv" placeholder="Nhập mã CVV" required>
                 <div class="invalid-feedback">
                   Không được để trống
                 </div>
               </div>
-              
+
             </div>
-           
+
           </div>
 
           <div id="diaChiForm">
             <label for="cc-name">Địa chỉ</label>
-            <input type="text" class="form-control" id="cc-name"
-              placeholder="Khu Phố 6, phường Linh Trung, Quận Thủ Đức, Tp.HCM" required>
+            <input type="text" class="form-control" id="cc-name" placeholder="Nhập địa chỉ" required>
             <div class="invalid-feedback">
               Không được để trống
             </div>
@@ -261,7 +264,7 @@ Liên hệ & Hỗ trợ </p>
           </div>
         </form>
 
-     
+
 
 
       </div>
@@ -276,22 +279,23 @@ Liên hệ & Hỗ trợ </p>
         <div class="ml-5 col-3">
           <div class="block">
             <p>PHƯƠNG THỨC THANH TOÁN</p>
-               <p><img class="icon m-2"
-            style="background-color: white; border: solid 1.1px; border-color: rgba(88, 87, 85, 0.233) ; border-radius: 5px; padding: 5px 1px 5.5px 1px;"
-            src="footer_phuongThucThanhtoan/vietcombank.svg" width="53px">
-        <img class="icon m-2"
-            style="background-color: white;border: solid 1.1px; border-color: rgba(88, 87, 85, 0.233) ;border-radius: 5px; padding: 1px 12px 1px 13px;"
-            src="footer_phuongThucThanhtoan/momo.png" width="55px">
-        <img class="icon m-2"
-            style="background-color: white;border: solid 1.1px; border-color: rgba(88, 87, 85, 0.233) ;border-radius: 5px; padding: 1.5px 0px 1.5px 0px;"
-            src="footer_phuongThucThanhtoan/agribank.png" width="53px">
-        <img class="icon m-2"
-            style="background-color: white;border: solid 1.1px; border-color: rgba(88, 87, 85, 0.233) ;border-radius: 5px; padding: 4px 1px 3px 1px;"
-            src="footer_phuongThucThanhtoan/BIDV.png" width="53px">
-        <img class="icon m-2" src="footer_phuongThucThanhtoan/visa.svg">
-        <img class="icon m-2" src="footer_phuongThucThanhtoan/cash.svg">
-    </p>
-          </div><p style="margin-top: -10px; font-size: 1em;">lượt truy cập</p>
+            <p><img class="icon m-2"
+                style="background-color: white; border: solid 1.1px; border-color: rgba(88, 87, 85, 0.233) ; border-radius: 5px; padding: 5px 1px 5.5px 1px;"
+                src="footer_phuongThucThanhtoan/vietcombank.svg" width="53px">
+              <img class="icon m-2"
+                style="background-color: white;border: solid 1.1px; border-color: rgba(88, 87, 85, 0.233) ;border-radius: 5px; padding: 1px 12px 1px 13px;"
+                src="footer_phuongThucThanhtoan/momo.png" width="55px">
+              <img class="icon m-2"
+                style="background-color: white;border: solid 1.1px; border-color: rgba(88, 87, 85, 0.233) ;border-radius: 5px; padding: 1.5px 0px 1.5px 0px;"
+                src="footer_phuongThucThanhtoan/agribank.png" width="53px">
+              <img class="icon m-2"
+                style="background-color: white;border: solid 1.1px; border-color: rgba(88, 87, 85, 0.233) ;border-radius: 5px; padding: 4px 1px 3px 1px;"
+                src="footer_phuongThucThanhtoan/BIDV.png" width="53px">
+              <img class="icon m-2" src="footer_phuongThucThanhtoan/visa.svg">
+              <img class="icon m-2" src="footer_phuongThucThanhtoan/cash.svg">
+            </p>
+          </div>
+          <p style="margin-top: -10px; font-size: 1em;">Lượt truy cập</p>
           <p style="margin-top: -20px;"><strong id="luottrruycap">9472</strong></p>
           <script>
             var myVar = setInterval(myTimer, 1000);
@@ -320,13 +324,13 @@ Liên hệ & Hỗ trợ </p>
           <p> HỢP TÁC VÀ LIÊN KẾT</p>
           <p> <a href="">Chính sách bảo hành</a></p>
           <p><a href=""> Chính sách đổi trả</a></p>
-          <p> <a href="">Tuyển dụng</a></p>
+          <p> <a href="Login_Page/AdminLogin/signIn.html">Admin</a></p>
           <p class="footerIcon">
-              <i style="color:rgb(13, 107, 214);" class="fa fa-facebook-official" aria-hidden="true"></i>
-              <i style="color: rgb(214, 18, 18);" class="fa fa-youtube-play mx-2" aria-hidden="true"></i>
-              <i style="color: rgb(144, 42, 228);" class="fa fa-linkedin-square" aria-hidden="true"></i>
-              <i style="color:rgb(10, 146, 146);" class="fa fa-twitter mx-2" aria-hidden="true"></i>
-            </p>
+            <i style="color:rgb(13, 107, 214);" class="fa fa-facebook-official" aria-hidden="true"></i>
+            <i style="color: rgb(214, 18, 18);" class="fa fa-youtube-play mx-2" aria-hidden="true"></i>
+            <i style="color: rgb(144, 42, 228);" class="fa fa-linkedin-square" aria-hidden="true"></i>
+            <i style="color:rgb(10, 146, 146);" class="fa fa-twitter mx-2" aria-hidden="true"></i>
+          </p>
         </div>
 
         <div class="row">

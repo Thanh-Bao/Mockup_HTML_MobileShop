@@ -54,8 +54,16 @@
 margin-left: 10px;
 }
 .btn-add{
+    margin-top: -40px;
     float: right;
     margin-right: 20px;
+  
+}
+.row-in-table td{
+    padding-top: 10px;
+}
+.arrange{
+    margin-left: 100px;
 }
 .sizeTh{
     max-width: 90px;
@@ -81,14 +89,46 @@ margin-left: 10px;
     height: 48px;
 }
 .boder-color{
-    border: solid 1px black;
-    border-radius: 10px;
+     border: solid 1px #7f7f7f;
+    border-radius: 4px;
     margin-top: 20px;
     margin-bottom: 10px;
     /* width: 100%; */
     margin-left: auto;
     margin-right: auto;
 }
+.boder-color1{
+   margin-top: 0px;
+   margin-bottom: 10px;
+   /* width: 100%; */
+   margin-left: auto;
+   margin-right: auto;
+}
+.boder-color2{
+
+    margin-bottom: 20px;
+    /* width: 100%; */
+    margin-left: auto;
+    margin-right: auto;
+ }
 .w-type{
     width: 100%;
+}
+.color-price{
+    color: red;
+}
+.feedback{
+    max-width: 250px;
+}#myInput{border: 0.5px solid grey;
+    outline: 0;
+    padding: 1px 10px;border-radius: 3px;    border: 1px solid #ced4da;}
+
+
+
+.bodertt{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.top-s{
+    margin-top: 40px;
 }

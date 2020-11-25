@@ -192,3 +192,24 @@ input::-webkit-inner-spin-button {
   border: 1px solid #656565;
   border-radius: 5px;
 }
+/*filter page*/
+.detail-attribute{
+  min-width:800px;
+}.select-choose{
+  padding: 4px;
+   outline: 0; 
+    border-radius: 4px;
+    border: 1px solid #c3c7cc;
+}.title-attribute{
+      padding: 4px;
+    border: 1px solid #c3c7cc;
+    width: 100%;
+    border-radius: 4px;
+    outline: 0;
+}.input-number{
+  max-width: 50px;
+    margin: 0px 6px;
+    padding: 2px 5px;
+    border-radius: 4px;
+    border: 1px solid #c3c7cc;outline: 0;
+}

@@ -27,7 +27,7 @@
 <!-- Thanh menu tim kiem -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-menu fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="../index.html"><i class="fa fa-mobile-alt"></i> NLU Mobile Shop</a>
+      <a class="navbar-brand" href="../index.html"><i class="fa fa-mobile-alt"></i> Mobile Shop</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -35,8 +35,8 @@
       <div class="input-group md-form form-sm form-2 pl-5 pr-5">
         <input class="form-control my-0 py-1 lime-border" type="text" placeholder="Bạn tìm gì..." aria-label="Search">
         <div class="input-group-append">
-          <span class="input-group-text lime lighten-2" id="basic-text1"><i class="fas fa-search text-grey"
-              aria-hidden="true"></i></span>
+          <span class="input-group-text lime lighten-2" id="basic-text1"><a href=""><i class="fas fa-search text-grey"
+              aria-hidden="true"></i></a></span>
         </div>
       </div>
   
@@ -54,7 +54,7 @@
               </div>
             </a>
           </li>
-          <li class="nav-item"><a href="#">
+          <li class="nav-item"><a href="../Bill_Page/Bill.html">
               <div class="item-menu">
                 <i class="fas fa-money-check"></i>
                 <div class="item-menu-text">
@@ -89,29 +89,47 @@
     </div>
   
   </nav>
+
+  <div class="filter-menu1">
+    <div class="">
+        <nav aria-label="breadcrumb" style="padding-top: -10px;">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html">Trang chủ</a></li>
+            <li class="breadcrumb-item"><a href="../GioHang&checkout_Page/gioHang.html">Giỏ hàng</a></li>
+            <li class="breadcrumb-item"><a href="../GioHang&checkout_Page/checkout.html">Thanh toán</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Hóa đơn</li>
+          </ol>
+        </nav>
+    </div>
+  </div>
    
 
-<div class="center canTop">
+   
+
+<div class="center canTop" style="margin-top: 40px;">
     <table align="center" border="0" cellpadding="0" cellspacing="0"
         style="padding: 0 30px;background-color: #fff; -webkit-box-shadow: 0px 0px 14px -4px rgba(0, 0, 0, 0.2705882353);box-shadow: 0px 0px 14px -4px rgba(0, 0, 0, 0.2705882353);width: 100%;">
         <tbody>
             <tr>
                 <td>
                     <table align="left" border="0" cellpadding="0" cellspacing="0" style="text-align: left;"
-                        width="100%">
-                        <tr>
-                            <td style="text-align: center;">
+                    width="100%">
+                    <tr>
+                        <td style="text-align: center;">
+                               <h2 style="margin-bottom: 20px;">Hóa đơn</h2>
                                 <img width="20%" src="..//image/img_checkOut/bill.webp" alt="image bill" style="margin-bottom: 30px;">
                             </td>
                         </tr>
                     </table>
                             <div style="margin-left: 110px;">
-                                    <p style="font-size: 14px;"><b>Chào Bạn,</b></p>
-                                    <p style="font-size: 14px;">Đơn hàng của bạn đã được đặt hàng thành công</p>
-                                    <p style="font-size: 14px;"><b>Mã đơn hàng : 267676GHERT105467</b></p>
+                                    <p style="font-size: 18px;"><b>Chào Nguyễn Văn Dũng,</b></p>
+                                    <p style="font-size: 18px;"><b>Số điện thoại : 0953636841</b></p>
+                                    <p style="font-size: 18px;">Đơn hàng của bạn đã được đặt hàng thành công</p>
+                                    <p style="font-size: 18px;"><b>Mã đơn hàng : 267676GHERT105467</b></p>
+                                    <p style="font-size: 18px;"><b>Địa chỉ giao hàng : 124/97 Khu phố 6,Phường Linh Trung,Quận Thủ Đức, Tp.HCM</b></p>
                             </div>
 
-                    <table cellpadding="0" cellspacing="0" border="0" align="left"
+                    <!-- <table cellpadding="0" cellspacing="0" border="0" align="left"
                         style="width: 100%;margin-top: 10px; width: 80%  ; margin-bottom: 10px; margin-left: 110px;margin-right: 10px;">
                         <tbody >
                             <tr>
@@ -136,7 +154,7 @@
                                 </td>
                             </tr>
                         </tbody>
-                    </table>
+                    </table> -->
                     <table class="order-detail" border="0" cellpadding="0" cellspacing="0" align="left"
                         style="width: 80%;    margin-bottom: 50px;margin-left: 110px;">
                         <tr align="left">
@@ -195,13 +213,13 @@
                             </td>
                         </tr>
                         <tr class="pad-left-right-space ">
-                            <td class="m-t-5" colspan="2" align="left">
-                                <p style="font-size: 14px;">TỔNG : </p>
+                            <td colspan="2" align="left">
+                                <h5 >Tổng:</h5>
                             </td>
-                            <td class="m-t-5" colspan="2" align="right">
-                                <b style>22.000.000VNĐ</b>
+                            <td colspan="2" align="right">
+                                <b>50.000.000<span> VNĐ</span></b>
                             </td>
-                        <tr class="pad-left-right-space">
+                        <!-- <tr class="pad-left-right-space">
                             <td colspan="2" align="left">
                                 <p style="font-size: 14px;">THUẾ :</p>
                             </td>
@@ -216,29 +234,29 @@
                             <td colspan="2" align="right">
                                 <b>2.220.000VNĐ</b>
                             </td>
-                        </tr>
+                        </tr> -->
                         <tr class="pad-left-right-space">
                             <td colspan="2" align="left">
-                                <p style="font-size: 14px;">phí giao hàng :</p>
+                                <h5 >Phí giao hàng :</h5>
                             </td>
                             <td colspan="2" align="right">
-                                <b>500.000VNĐ</b>
+                                <b>500.000<span> VNĐ</span></b>
                             </td>
                         </tr>
-                        <tr class="pad-left-right-space">
+                        <!-- <tr class="pad-left-right-space">
                             <td colspan="2" align="left">
                                 <p style="font-size: 14px;">giảm giá :</p>
                             </td>
                             <td colspan="2" align="right">
                                 <b>3.000.000VNĐ</b>
                             </td>
-                        </tr>
+                        </tr> -->
                         <tr class="pad-left-right-space ">
                             <td class="m-b-5" colspan="2" align="left">
-                                <p style="font-size: 14px;">Tổng cộng :</p>
+                                <h5 style="color: black;">Tổng cộng :</h5>
                             </td>
                             <td class="m-b-5" colspan="2" align="right">
-                                <b>27.920.000VNĐ</b>
+                                <h5 style="color: red;text-align: right;">27.920.000 <span>VNĐ</span></h5>
                             </td>
                         </tr>
 
@@ -252,9 +270,9 @@
         width="100%">
         <tr>
             <td style="padding: 30px;">
-                <div>
-                    <h4 class="title" style="margin:0;text-align: center;">Theo dõi chúng tôi trên</h4>
-                </div>
+                <a href="../index.html">
+                    <button type="submit" class="btn btn-primary">TIẾP TỤC MUA HÀNG</button>
+                </a>
                 <table border="0" cellpadding="0" cellspacing="0" class="footer-social-icon" align="center"
                     class="text-center" style="margin-top:20px;">
                     <tr>
@@ -283,27 +301,95 @@
 
                     <tr>
                         <td>
-                            <a href="../index.html">
+                            <!-- <a href="../index.html">
                                 <button type="submit" class="btn btn-primary">TIẾP TỤC MUA HÀNG</button>
-                            </a>
+                            </a> -->
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <p style="font-size:13px; margin-top:20px;">2018 - 19 Copy Right by Themeforest powerd by Pixel
-                                Strap</p>
+                           
                         </td>
                     </tr>
-                    <tr>
-                        <td>
-                            <a href="#" style="font-size:13px; margin:0;text-decoration: underline;">Unsubscribe</a>
-                        </td>
-                    </tr>
+                  
                 </table>
             </td>
         </tr>
     </table>
 </div>
+<!-- Footer -->
+<footer class=" bg-dark footerA text-center d-flex justify-content-center">
+    <div class="container pt-4">
+      <div class="row">
+        <div class="ml-5 col-3">
+          <div class="block">
+            <p>PHƯƠNG THỨC THANH TOÁN</p>
+               <p><img class="icon m-2"
+            style="background-color: white; border: solid 1.1px; border-color: rgba(88, 87, 85, 0.233) ; border-radius: 5px; padding: 5px 1px 5.5px 1px;"
+            src="footer_phuongThucThanhtoan/vietcombank.svg" width="53px">
+        <img class="icon m-2"
+            style="background-color: white;border: solid 1.1px; border-color: rgba(88, 87, 85, 0.233) ;border-radius: 5px; padding: 1px 12px 1px 13px;"
+            src="footer_phuongThucThanhtoan/momo.png" width="55px">
+        <img class="icon m-2"
+            style="background-color: white;border: solid 1.1px; border-color: rgba(88, 87, 85, 0.233) ;border-radius: 5px; padding: 1.5px 0px 1.5px 0px;"
+            src="footer_phuongThucThanhtoan/agribank.png" width="53px">
+        <img class="icon m-2"
+            style="background-color: white;border: solid 1.1px; border-color: rgba(88, 87, 85, 0.233) ;border-radius: 5px; padding: 4px 1px 3px 1px;"
+            src="footer_phuongThucThanhtoan/BIDV.png" width="53px">
+        <img class="icon m-2" src="footer_phuongThucThanhtoan/visa.svg">
+        <img class="icon m-2" src="footer_phuongThucThanhtoan/cash.svg">
+    </p>
+          </div>
+          <p style="margin-top: -10px; font-size: 1em;">lượt truy cập</p>
+          <p style="margin-top: -20px;"><strong id="luottrruycap">9472</strong></p>
+          <script>
+            var myVar = setInterval(myTimer, 1000);
+            function myTimer() {
+              document.getElementById("luottrruycap").innerHTML =
+                Math.floor(Math.random() * 10000) + 9999;
+            }
+          </script>
+        </div>
+
+
+
+        <div class="col-5">
+          <div class="PhoneSupport">
+            <p>HỖ TRỢ KHÁCH HÀNG</p>
+            <p> Gọi mua hàng: <strong>1800.1099</strong> (7:30 - 22:00)</p>
+            <p> Gọi khiếu nại: <strong class="ml-1">1800.1079</strong> (8:00 - 21:30)</p>
+            <p> Gọi bảo hành: <strong>1800.1069</strong> (8:00 - 21:00)</p>
+          </div>
+          <img width="30%" src="footer_phuongThucThanhtoan/BoCongThuong.png">
+          <img width="10%" src="footer_phuongThucThanhtoan/BoCongThuong2.png">
+        </div>
+
+
+        <div class="col-3 hoptac">
+          <p> HỢP TÁC VÀ LIÊN KẾT</p>
+          <p> <a href="">Chính sách bảo hành</a></p>
+          <p><a href=""> Chính sách đổi trả</a></p>
+          <p> <a href="">Tuyển dụng</a></p>
+          <p class="footerIcon">
+            <i style="color:rgb(13, 107, 214);" class="fa fa-facebook-official" aria-hidden="true"></i>
+            <i style="color: rgb(214, 18, 18);" class="fa fa-youtube-play mx-2" aria-hidden="true"></i>
+            <i style="color: rgb(144, 42, 228);" class="fa fa-linkedin-square" aria-hidden="true"></i>
+            <i style="color:rgb(10, 146, 146);" class="fa fa-twitter mx-2" aria-hidden="true"></i>
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <p class="description">© 1992. Công ty cổ phần MobileShop. GPMXH: 238/GP-BTTTT do Bộ Thông
+              Tin và
+              Truyền Thông cấp ngày 04/06/1990. Địa chỉ: 128 Trần Quang Khải, P. Tân Định, Q.1, TP.Hồ Chí Minh. Điện
+              thoại: 028 38125960. Email: cskh@mobileShop.com. Chịu trách nhiệm nội dung: Huỳnh Văn Tốt</p>
+          </div>
+        </div>
+
+      </div>
+      <!-- /.container -->
+  </footer>
 
 
 </body>

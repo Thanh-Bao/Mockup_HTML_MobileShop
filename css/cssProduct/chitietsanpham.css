@@ -110,7 +110,11 @@ input.star:checked ~ label.star:before {
   color: #ffa500;
   transition: all 0.25s;
 }
-
+input.star:hover ~ label.star:before {
+  content: "\f005";
+  color: #ffa500;
+  transition: all 0.25s;
+}
 input.star-5:checked ~ label.star:before {
   color: #ffa500;
 }
@@ -120,7 +124,9 @@ input.star-1:checked ~ label.star:before {
 }
 
 label.star:hover {
-  transform: rotate() scale(1.3);
+  content: "\f005";
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
 label.star:before {
@@ -201,20 +207,4 @@ label.star:before {
 }
 #img {
   max-width: 360px;
-}
-/* css for cart */
-#cart {
-  position: relative;
-}
-#quantity-cart {
-  position: absolute;
-  top: -5px;
-  left: 55px;
-  color: black;
-  background-color: #d88e3f;
-  border-radius: 4px;
-  padding: 4px 8px;
-  font-size: 10px;
-  font-weight: 700;
-  display: none;
 }

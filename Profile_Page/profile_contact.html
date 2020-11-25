@@ -43,13 +43,14 @@
 
                                 <i class="fas fa-phone-square-alt"></i>
                                 <div class="item-menu-text">
-                                    <p>Liên hệ </p>
+                                    <p>
+                                        Liên hệ & Hỗ trợ </p>
                                 </div>
 
                             </div>
                         </a>
                     </li>
-                    <li class="nav-item"><a href="#">
+                    <li class="nav-item"><a href="../Check-reicept_Page/check-receipt.html">
                             <div class="item-menu">
                                 <i class="fas fa-money-check"></i>
                                 <div class="item-menu-text">
@@ -61,21 +62,21 @@
                     </li>
                     <li class="nav-item"><a href="../Login_Page/sign-in/signIn.html">
                             <div class="item-menu">
-                                <i class="fas fa-sign-out-alt"></i>
+                                <i class="fas fa-user"></i>
                                 <div class="item-menu-text">
-                                    <p>Đăng xuất</p>
+                                    <p>Đăng nhập</p>
                                 </div>
 
                             </div>
                         </a>
                     </li>
                     <li class="nav-item"><a href="../GioHang&checkout_Page/gioHang.html">
-                            <div class="item-menu">
+                            <div class="item-menu" id="cart">
                                 <i class="fas fa-shopping-cart"></i>
                                 <div class="item-menu-text">
                                     <p>Giỏ hàng </p>
                                 </div>
-
+                                <label class="quantity-cart" id="quantity-cart">0</label>
                             </div>
                         </a>
                     </li>
@@ -101,26 +102,33 @@
 
                 <ul class="list-group mt-3 ps-menu">
                     <a href="#">
-                        <li onclick="switchPage(id)" id="ThongTinCaNhan" class="list-group-item "><i
-                                class="fa fa-id-card"></i>
-                            Thông tin
-                            cá nhân</li>
+                      <li onclick="switchPage(id)" id="ThongTinCaNhan" class="list-group-item "><i
+                          class="fa fa-id-card"></i>
+                        Thông tin
+                        cá nhân</li>
+                    </a> <a href="/Profile_Page/profile_receipt.html">
+                      <li onclick="switchPage(id)" id="DonDatHang" class="list-group-item active"><i class="fas fa-box"></i> Đơn hàng đã
+                        đặt <span class="badge badge-secondary">
+                          103</span></li>
+                    </a> <a href="../GioHang&checkout_Page/gioHang.html">
+                      <li onclick="switchPage(id)" id="GioHangCuaToi" class="list-group-item"><i class="fas fa-shopping-cart"></i>
+                        Giỏ hàng
+                        của tôi <span class="badge badge-danger"> 39</span></li>
                     </a> <a href="#">
-                        <li onclick="switchPage(id)" id="DonDatHang" class="list-group-item active"><i
-                                class="fas fa-box"></i> Đơn hàng đã
-                            đặt <span class="badge badge-secondary">
-                                103</span></li>
-                    </a> <a href="#">
-                        <li onclick="switchPage(id)" id="GioHangCuaToi" class="list-group-item"><i
-                                class="fas fa-shopping-cart"></i>
-                            Giỏ hàng
-                            của tôi <span class="badge badge-danger"> 39</span></li>
-                    </a> <a href="#">
-                        <li onclick="switchPage(id)" id="SanPhamDoiTra" class="list-group-item"><i
-                                class="fas fa-sync"></i> Gửi phản hồi
-                        </li>
+                      <li onclick="switchPage(id)" id="SanPhamDoiTra" class="list-group-item"><i class="fas fa-sync"></i> Gửi phản
+                        hồi
+                      </li>
                     </a>
-                </ul>
+                    </a> <a href="../Login_Page/sign-in/signIn.html">
+                      <li onclick="switchPage(id)" id="SanPhamDoiTra" class="list-group-item"><i class="fas fa-sign-out-alt"></i> Đăng xuất
+          
+                      
+          
+          
+                      </li>
+                    </a>
+                  </ul>
+          
 
                 <!-- <div class="toast mt-3" role="alert" data-autohide="false" aria-live="assertive" aria-atomic="true">
           <div class="toast-header">
@@ -158,15 +166,23 @@
                 <div class="ml-5 col-3">
                     <div class="block">
                         <p>PHƯƠNG THỨC THANH TOÁN</p>
-                        <p><img class="icon m-2" src="footer_phuongthuocThanhtoan/cash.svg" width="54">
-                            <img class="icon  m-2" src="footer_phuongthuocThanhtoan/installment.svg" width="54">
-                            <img class="icon  m-2" src="footer_phuongthuocThanhtoan/internet-banking.svg" width="54">
-                            <img class="icon  m-2" src="footer_phuongthuocThanhtoan/jcb.svg" width="54">
-                            <img class="icon  m-2" src="footer_phuongthuocThanhtoan/mastercard.svg" width="54">
-                            <img class="icon  m-2" src="footer_phuongthuocThanhtoan/visa.svg" width="54">
+                        <p><img class="icon m-2"
+                                style="background-color: white; border: solid 1.1px; border-color: rgba(88, 87, 85, 0.233) ; border-radius: 5px; padding: 5px 1px 5.5px 1px;"
+                                src="footer_phuongThucThanhtoan/vietcombank.svg" width="53px">
+                            <img class="icon m-2"
+                                style="background-color: white;border: solid 1.1px; border-color: rgba(88, 87, 85, 0.233) ;border-radius: 5px; padding: 1px 12px 1px 13px;"
+                                src="footer_phuongThucThanhtoan/momo.png" width="55px">
+                            <img class="icon m-2"
+                                style="background-color: white;border: solid 1.1px; border-color: rgba(88, 87, 85, 0.233) ;border-radius: 5px; padding: 1.5px 0px 1.5px 0px;"
+                                src="footer_phuongThucThanhtoan/agribank.png" width="53px">
+                            <img class="icon m-2"
+                                style="background-color: white;border: solid 1.1px; border-color: rgba(88, 87, 85, 0.233) ;border-radius: 5px; padding: 4px 1px 3px 1px;"
+                                src="footer_phuongThucThanhtoan/BIDV.png" width="53px">
+                            <img class="icon m-2" src="footer_phuongThucThanhtoan/visa.svg">
+                            <img class="icon m-2" src="footer_phuongThucThanhtoan/cash.svg">
                         </p>
                     </div>
-                    <p style="margin-top: -10px; font-size: 1em;">lượt truy cập</p>
+                    <p style="margin-top: -10px; font-size: 1em;">Lượt truy cập</p>
                     <p style="margin-top: -20px;"><strong id="luottrruycap">9472</strong></p>
                     <script>
                         var myVar = setInterval(myTimer, 1000);
@@ -186,8 +202,8 @@
                         <p> Gọi khiếu nại: <strong class="ml-1">1800.1079</strong> (8:00 - 21:30)</p>
                         <p> Gọi bảo hành: <strong>1800.1069</strong> (8:00 - 21:00)</p>
                     </div>
-                    <img width="30%" src="footer_phuongthuocThanhtoan/BoCongThuong.png">
-                    <img width="10%" src="footer_phuongthuocThanhtoan/BoCongThuong2.png">
+                    <img width="30%" src="footer_phuongThucThanhtoan/BoCongThuong.png">
+                    <img width="10%" src="footer_phuongThucThanhtoan/BoCongThuong2.png">
                 </div>
 
 
@@ -195,7 +211,7 @@
                     <p> HỢP TÁC VÀ LIÊN KẾT</p>
                     <p> <a href="">Chính sách bảo hành</a></p>
                     <p><a href=""> Chính sách đổi trả</a></p>
-                    <p> <a href="">Tuyển dụng</a></p>
+                    <p> <a href="Login_Page/AdminLogin/signIn.html">Admin</a></p>
                     <p class="footerIcon">
                         <i style="color:rgb(13, 107, 214);" class="fa fa-facebook-official" aria-hidden="true"></i>
                         <i style="color: rgb(214, 18, 18);" class="fa fa-youtube-play mx-2" aria-hidden="true"></i>

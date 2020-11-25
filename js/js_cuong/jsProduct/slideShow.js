@@ -35,26 +35,6 @@ function change(path){
 
 
 
-
-
-
-
-var send =document.getElementById("send");
-var checkClick = true;
-send.onclick=function send(){
-  var dt = document.getElementById("formReview");
-  if(checkClick==true){
-  dt.style.display="block";
-  var send =document.getElementById("send").innerHTML = "Đóng";
-  checkClick = false;
-}else{
-  dt.style.display="none";
-  var send =document.getElementById("send").innerHTML = "Gửi đánh giá của bạn";
-  checkClick = true;
-  }
-}
-
-
 var send1 =document.getElementById("send1");
 var checkClick1 = true;
 send1.onclick=function send1(){
@@ -75,5 +55,4 @@ document.getElementById("close").onclick = function closeTxt(){
   checkClick1 = true;
 }
 }
-
 
