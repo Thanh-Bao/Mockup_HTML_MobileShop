@@ -11,12 +11,27 @@
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <link rel="stylesheet" href="../css/all.min.css">
     <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/style-dang.css">
     <link rel="stylesheet" href="../css/cssGioHang_checkOut/cart.css">
+    <link rel="stylesheet" href="../css/style-dang.css">
 </head>
 
 <style>
+    .fa-trash {
+        color: rgb(226, 13, 13);
+    }
 
+    .fa-sync {
+        color: rgb(18, 195, 18);
+    }
+
+    .tongCong {
+        display: inline;
+    }
+
+    .colorPrice {
+        color: #ee370a;
+        padding-left: 10px;
+    }
 </style>
 
 <body>
@@ -43,20 +58,19 @@
 
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto pt-3">
-
                     <li class="nav-item ">
-                        <a href="LienHe/Contact.html">
+                        <a href="../LienHe/Contact.html">
                             <div class="item-menu">
 
                                 <i class="fas fa-phone-square-alt"></i>
                                 <div class="item-menu-text">
-                                    <p>Liên hệ &amp; Hỗ trợ </p>
+                                    <p>Liên hệ </p>
                                 </div>
 
                             </div>
                         </a>
                     </li>
-                    <li class="nav-item"><a href="Check-reicept_Page/check-receipt.html">
+                    <li class="nav-item"><a href="#">
                             <div class="item-menu">
                                 <i class="fas fa-money-check"></i>
                                 <div class="item-menu-text">
@@ -66,7 +80,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="nav-item"><a href="Login_Page/sign-in/signIn.html">
+                    <li class="nav-item"><a href="../Login_Page/sign-in/signIn.html">
                             <div class="item-menu">
                                 <i class="fas fa-user"></i>
                                 <div class="item-menu-text">
@@ -76,13 +90,13 @@
                             </div>
                         </a>
                     </li>
-                    <li class="nav-item"><a href="GioHang&checkout_Page/gioHang.html">
-                            <div class="item-menu" id="cart">
+                    <li class="nav-item"><a href="../GioHang&checkout_Page/gioHang.html">
+                            <div class="item-menu">
                                 <i class="fas fa-shopping-cart"></i>
                                 <div class="item-menu-text">
                                     <p>Giỏ hàng </p>
                                 </div>
-                                <label class="quantity-cart d-block" id="quantity-cart">3</label>
+
                             </div>
                         </a>
                     </li>
@@ -107,147 +121,221 @@
 
     <section class="pt-5 pb-5 ">
         <div class="container">
-            <div class="row">
-                <div class="col-8">
-                    <div class="frame-cart">
-                        <ul>
-                            <li class="cart-content">
-                                <img src="../image/img_phone/1.jpg">
-
-
-                                <div class="content-product">
-                                    <div class="alpha">
-                                        <div class="mb-4">
-                                            <a href="../Product_page/chiTietSanPham.html"> iPhone 12 Pro Max 123GB</a>
+            <div class="row w-100">
+                <div class="col-lg-12 col-md-12 col-12">
+                    <h3 class="display-5 mb-2 text-center">Giỏ hàng</h3>
+                    <p class="mb-5 text-center">
+                        <i class="text-info font-weight-bold">3</i> sản phẩm trong giỏ hàng của bạn</p>
+                    <table id="shoppingCart" style="width: 85%;" class="table table-condensed m-auto">
+                        <thead>
+                            <tr>
+                                <th style="width:60%">Tên sản phẩm</th>
+                                <th style="width:15%">Giá</th>
+                                <th style="width: 25%;" class="text-center">Số lượng</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-th="Product">
+                                    <div class="row">
+                                        <div class="col-md-3 text-left">
+                                            <img src="../image/Product/IPhone8.jpg" alt=""
+                                                class="img-fluid d-none d-md-block rounded mb-2 shadow ">
                                         </div>
-                                        <p>Màu sắc: <span>Đen</span></p>
-                                        <p>Thương hiệu: <span>Apple</span></p>
-                                    </div>
-                                    <div class="beta">
-                                        <div class="price">
-                                            <p>23.000.00 <span class="unit">đ </span></p>
-                                            <p class="discount-price">23.000.00 <span class="unit">đ </span></p>
-                                        </div>
-                                        <div class="quantity">
-                                            <div class="quantity-content"> <button class="btn minus"><i
-                                                        class="fas fa-minus"></i></button>
-                                                <input type="number" min="1" value="1" max="5">
-                                                <button class="btn plus"><i class="fas fa-plus"></i></button></div>
-                                            <div class="delete-content"> <button class="btn btn-danger">Xóa</button></div>
+                                        <div class="col-md-9 text-left mt-sm-2">
+                                            <h4>Iphone 8S</h4>
+                                            <p class="font-weight-light">Bộ nhớ 512GB</p>
                                         </div>
                                     </div>
-                                </div>
-
-
-
-                            </li>
-                            <li class="cart-content">
-                                <img src="../image/img_phone/5.jpg">
-
-
-                                <div class="content-product">
-                                    <div class="alpha">
-                                        <div class="mb-4">
-                                            <a href="../Product_page/chiTietSanPham.html"> Vivo S8 64GB</a>
-                                        </div>
-                                        <p>Màu sắc: <span>Tím</span></p>
-                                        <p>Thương hiệu: <span>Vivo</span></p>
+                                </td>
+                                <td data-th="Price"
+                                    style="color: red;font-size: 20px; min-width: 100px;font-weight: 600;">9.000.000
+                                    <span class="unit">đ</span>
+                                </td>
+                                <td data-th="Quantity">
+                                    <div class="" style="margin-left: 90px;">
+                                        <button class="btn-cart d-block d-inline float-left"><i
+                                                class="fas fa-minus"></i></button>
+                                        <input type="number" class="text-center inputnumber d-inline float-left" min='1'
+                                            value="1">
+                                        <button class="btn-cart d-block d-inline float-left"><i
+                                                class="fas fa-plus"></i></button>
                                     </div>
-                                    <div class="beta">
-                                        <div class="price">
-                                            <p>17.000.00 <span class="unit">đ </span></p>
-                                            <p class="discount-price">17.000.00 <span class="unit">đ </span></p>
-                                        </div>
-                                        <div class="quantity">
-                                            <div class="quantity-content"> <button class="btn minus"><i
-                                                        class="fas fa-minus"></i></button>
-                                                <input type="number" min="1" value="1" max="5">
-                                                <button class="btn plus"><i class="fas fa-plus"></i></button></div>
-                                            <div class="delete-content"> <button class="btn btn-danger">Xóa</button></div>
-                                        </div>
-                                    </div>
-                                </div>
+                                </td>
+                                <td class="actions" data-th="">
+                                    <div class="text-right">
 
+                                        <!-- Button trigger modal -->
+                                        <button class="btn btn-white border-secondary bg-white btn-md mb-2"
+                                            data-toggle="modal" data-target="#sp1">
+                                            <i class="fa fa-trash"></i>
+                                        </button>
 
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="sp1" tabindex="-1" role="dialog" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title">Xóa sản phẩm này ?</h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
 
-                            </li>
-                            <li class="cart-content">
-                                <img src="../image/img_phone/12.jpg">
-
-
-                                <div class="content-product">
-                                    <div class="alpha">
-                                        <div class="mb-4">
-                                            <a href="../Product_page/chiTietSanPham.html"> Samsung galaxy S10</a>
-                                        </div>
-                                        <p>Màu sắc: <span>Trắng</span></p>
-                                        <p>Thương hiệu: <span>Samsung</span></p>
-                                    </div>
-                                    <div class="beta">
-                                        <div class="price">
-                                            <p>26.000.00 <span class="unit">đ </span></p>
-                                            <p class="discount-price">26.000.00 <span class="unit">đ </span></p>
-                                        </div>
-                                        <div class="quantity">
-                                            <div class="quantity-content"> <button class="btn minus"><i
-                                                        class="fas fa-minus"></i></button>
-                                                <input type="number" min="1" value="1" max="5">
-                                                <button class="btn plus"><i class="fas fa-plus"></i></button></div>
-                                            <div class="delete-content"> <button class="btn btn-danger  ">Xóa</button></div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-dismiss="modal">Hủy</button>
+                                                        <button type="button" data-dismiss="modal"
+                                                            class="btn btn-danger">Xóa</button>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-th="Product">
+                                    <div class="row">
+                                        <div class="col-md-3 text-left">
+                                            <img src="../image/Product/samsung.png" alt=""
+                                                class="img-fluid d-none d-md-block rounded mb-2 shadow ">
+                                        </div>
+                                        <div class="col-md-9 text-left mt-sm-2">
+                                            <h4>Oppo A8 Plus</h4>
+                                            <p class="font-weight-light">Phiên bản limited edition</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td data-th="Price"
+                                    style="color: red;font-size: 20px; min-width: 100px;font-weight: 600;">13.000.000
+                                    <span class="unit">đ</span>
+                                </td>
+                                <td data-th="Quantity">
+                                    <div class="" style="margin-left: 90px;">
+                                        <button class="btn-cart d-block d-inline float-left"><i
+                                                class="fas fa-minus"></i></button>
+                                        <input type="number" class="text-center inputnumber d-inline float-left" min='1'
+                                            value="1">
+                                        <button class="btn-cart d-block d-inline float-left"><i
+                                                class="fas fa-plus"></i></button>
+                                    </div>
+                                </td>
+                                <td class="actions" data-th="">
+                                    <div class="text-right">
 
+                                        <button class="btn btn-white border-secondary bg-white btn-md mb-2"
+                                            data-toggle="modal" data-target="#sp1">
+                                            <i class="fa fa-trash"></i>
+                                        </button>
 
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="sp1" tabindex="-1" role="dialog" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title">Xóa sản phẩm này ?</h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
 
-                            </li>
-                        </ul>
-                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-dismiss="modal">Hủy</button>
+                                                        <button type="button" data-dismiss="modal"
+                                                            class="btn btn-danger">Xóa</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-th="Product">
+                                    <div class="row">
+                                        <div class="col-md-3 text-left">
+                                            <img src="../image/Product/sony.jpg" style="height: 70%;" alt=""
+                                                class="img-fluid d-none d-md-block rounded mb-2 shadow ">
+                                        </div>
+                                        <div class="col-md-9 text-left mt-sm-2">
+                                            <h4>Sony Xperia</h4>
+                                            <p class="font-weight-light">Phiên bản quốc tế</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td data-th="Price"
+                                    style="color: red;font-size: 20px; min-width: 100px;font-weight: 600;">2.000.000
+                                    <span class="unit">đ</span>
+                                </td>
+                                <td data-th="Quantity">
+                                    <div class="" style="margin-left: 90px;">
+                                        <button class="btn-cart d-block d-inline float-left"><i
+                                                class="fas fa-minus"></i></button>
+                                        <input type="number" class="text-center inputnumber d-inline float-left" min='1'
+                                            value="1">
+                                        <button class="btn-cart d-block d-inline float-left"><i
+                                                class="fas fa-plus"></i></button>
+                                    </div>
+                                </td>
+                                <td class="actions" data-th="">
+                                    <div class="text-right">
 
-                </div>
-                <div class="col-4">
-                    <h5 class="mb-3 text-left ml-5">Tạm tính</h5>
-                    <div class="receipt">
+                                        <button class="btn btn-white border-secondary bg-white btn-md mb-2"
+                                            data-toggle="modal" data-target="#sp1">
+                                            <i class="fa fa-trash"></i>
+                                        </button>
 
-                        <ul>
-                            <li class="price-product">
-                                <h5>iPhone 12 Pro Max 123GB<span>x</span> 1</h5>
-                                <p>23.000.000 <span class="unit"> đ</span></p>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="sp1" tabindex="-1" role="dialog" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title">Xóa sản phẩm này ?</h5>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
 
-                            </li>
-                            <li class="price-product">
-                                <h5>Samsung Galayxy S10 <span>x</span> 1</h5>
-                                <p>17.000.000 <span class="unit"> đ</span> </p>
-                            </li>
-                            <li class="price-product">
-                                <h5>Vivo S8 64G<span>x</span> 1</h5>
-                                <p>26.000.000 <span class="unit"> đ</span></p>
-                            </li>
-                        </ul>
-                        <div class="sum-price">
-                            <div class="title">
-                                <p>Tổng tiền</p>
-                            </div>
-                            <div class="price-sum">
-                                <p class="price">66.000.000 <span class="unit"> đ</span></p>
-                                <p>(Đã bao gồm VAT nếu có)</p>
-                            </div>
-                            <a class="text-none" style="color:rgb(255, 255, 255)" href="checkout.html"> <button
-                                    class="btn-primary btn-receipt">Thanh toán</button></a>
-
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-dismiss="modal">Hủy</button>
+                                                        <button type="button" data-dismiss="modal"
+                                                            class="btn btn-danger">Xóa</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="float-right text-right">
+                        <div class="mb-4">
+                            <h4 class="tongCong ">Tổng cộng</h4>
                         </div>
+                        <h4 class="colorPrice tongCong">22.000.000VNĐ</h4>
                     </div>
-
+                </div>
+            </div>
+            <div class="row mt-4 d-flex align-items-center">
+                <div class="col-sm-6 order-md-2 text-right">
+                    <a href="../GioHang&checkout_Page/checkout.html" class="btn btn-primary mb-4 btn-lg pl-5 pr-5"
+                        style="margin-right: 50px;">Xác nhận thanh toán</a>
                 </div>
 
+                <div class="col-sm-6 mb-3 mb-m-1 order-md-1 text-md-left">
+                    <a href="../index.html">
+                        <i class="fas fa-arrow-left mr-2"></i> Tiếp tục mua hàng</a>
+                </div>
             </div>
         </div>
-
-
-
-
-
-
     </section>
 
 
@@ -258,31 +346,14 @@
                 <div class="ml-5 col-3">
                     <div class="block">
                         <p>PHƯƠNG THỨC THANH TOÁN</p>
-                        <p><img class="icon m-2"
-                                style="background-color: white; border: solid 1.1px; border-color: rgba(88, 87, 85, 0.233) ; border-radius: 5px; padding: 5px 1px 5.5px 1px;"
-                                src="footer_phuongThucThanhtoan/vietcombank.svg" width="53px">
-                            <img class="icon m-2"
-                                style="background-color: white;border: solid 1.1px; border-color: rgba(88, 87, 85, 0.233) ;border-radius: 5px; padding: 1px 12px 1px 13px;"
-                                src="footer_phuongThucThanhtoan/momo.png" width="55px">
-                            <img class="icon m-2"
-                                style="background-color: white;border: solid 1.1px; border-color: rgba(88, 87, 85, 0.233) ;border-radius: 5px; padding: 1.5px 0px 1.5px 0px;"
-                                src="footer_phuongThucThanhtoan/agribank.png" width="53px">
-                            <img class="icon m-2"
-                                style="background-color: white;border: solid 1.1px; border-color: rgba(88, 87, 85, 0.233) ;border-radius: 5px; padding: 4px 1px 3px 1px;"
-                                src="footer_phuongThucThanhtoan/BIDV.png" width="53px">
-                            <img class="icon m-2" src="footer_phuongThucThanhtoan/visa.svg">
-                            <img class="icon m-2" src="footer_phuongThucThanhtoan/cash.svg">
+                        <p><img class="icon m-2" src="footer_phuongthuocThanhtoan/cash.svg" width="54">
+                            <img class="icon  m-2" src="footer_phuongthuocThanhtoan/installment.svg" width="54">
+                            <img class="icon  m-2" src="footer_phuongthuocThanhtoan/internet-banking.svg" width="54">
+                            <img class="icon  m-2" src="footer_phuongthuocThanhtoan/jcb.svg" width="54">
+                            <img class="icon  m-2" src="footer_phuongthuocThanhtoan/mastercard.svg" width="54">
+                            <img class="icon  m-2" src="footer_phuongthuocThanhtoan/visa.svg" width="54">
                         </p>
                     </div>
-                    <p style="margin-top: -10px; font-size: 1em;">Lượt truy cập</p>
-                    <p style="margin-top: -20px;"><strong id="luottrruycap">9472</strong></p>
-                    <script>
-                        var myVar = setInterval(myTimer, 1000);
-                        function myTimer() {
-                            document.getElementById("luottrruycap").innerHTML =
-                                Math.floor(Math.random() * 10000) + 9999;
-                        }
-                    </script>
                 </div>
 
 
@@ -294,8 +365,8 @@
                         <p> Gọi khiếu nại: <strong class="ml-1">1800.1079</strong> (8:00 - 21:30)</p>
                         <p> Gọi bảo hành: <strong>1800.1069</strong> (8:00 - 21:00)</p>
                     </div>
-                    <img width="30%" src="footer_phuongThucThanhtoan/BoCongThuong.png">
-                    <img width="10%" src="footer_phuongThucThanhtoan/BoCongThuong2.png">
+                    <img width="30%" src="footer_phuongthuocThanhtoan/BoCongThuong.png">
+                    <img width="10%" src="footer_phuongthuocThanhtoan/BoCongThuong2.png">
                 </div>
 
 
@@ -303,7 +374,7 @@
                     <p> HỢP TÁC VÀ LIÊN KẾT</p>
                     <p> <a href="">Chính sách bảo hành</a></p>
                     <p><a href=""> Chính sách đổi trả</a></p>
-                    <p> <a href="Login_Page/AdminLogin/signIn.html">Admin</a></p>
+                    <p> <a href="">Tuyển dụng</a></p>
                     <p class="footerIcon">
                         <i style="color:rgb(13, 107, 214);" class="fa fa-facebook-official" aria-hidden="true"></i>
                         <i style="color: rgb(214, 18, 18);" class="fa fa-youtube-play mx-2" aria-hidden="true"></i>
@@ -326,6 +397,7 @@
             </div>
             <!-- /.container -->
     </footer>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -337,7 +409,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script src="../js/js_dang/cart.js"></script>
+
 </body>
 
 </html>

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Đăng nhập</title>
+  <title>Title</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -34,7 +34,7 @@
         <input class="form-control my-0 py-1 lime-border" type="text" placeholder="Bạn tìm gì..." aria-label="Search">
         <div class="input-group-append">
           <span class="input-group-text lime lighten-2" id="basic-text1"><a href=""><i class="fas fa-search text-grey"
-                aria-hidden="true"></i></a></span>
+              aria-hidden="true"></i></a></span>
         </div>
       </div>
 
@@ -46,14 +46,13 @@
 
                 <i class="fas fa-phone-square-alt"></i>
                 <div class="item-menu-text">
-                  <p>
-                    Liên hệ & Hỗ trợ </p>
+                  <p>Liên hệ </p>
                 </div>
 
               </div>
             </a>
           </li>
-          <li class="nav-item"><a href="../../Check-reicept_Page/check-receipt.html">
+          <li class="nav-item"><a href="#">
               <div class="item-menu">
                 <i class="fas fa-money-check"></i>
                 <div class="item-menu-text">
@@ -99,28 +98,28 @@
       </nav>
     </div>
   </div>
+   
 
-
-
+   
 
   <!-- form dang nhập -->
-  <div class="form-signin" id="login">
+  <form class="form-signin" id="login">
     <img class="mb-4" src="../../image/imgLogin/icon.png" alt="" width="72" height="72">
     <h1 class="h3 mb-3 font-weight-normal">Đăng nhập</h1>
 
-    <input type="email" id="inputEmail" class="form-control" placeholder="Email hoặc số điện thoại" value="mobileshop@gmail.com"onfocusout=" check_email(this.id)">
+    <input type="email" id="inputEmail" class="form-control" placeholder="Email " onfocusout=" check_email(this.id)"
+      >
     <div class="require" id="require-email">Yêu cầu nhập email theo đúng theo định dạng email <br>Ví dụ:
       nlumobile@gmail.com
     </div>
-    <input type="password" id="inputPassword" class="form-control " placeholder="Mật khẩu" value="123456723"
+    <input type="password" id="inputPassword" class="form-control " placeholder="Mật khẩu"
       onfocusout="check_password(this)">
     <div class="require" id="require-password">Mật khẩu phải có ít nhất 8 ký tự</div>
     <div class="checkbox mb-3">
       <a href="QuenMK.html" class="mx-2">Quên mật khẩu</a>
       <a href="Signup.html" class="mx-2">Đăng kí</a>
     </div>
-    <a href="../../Profile_Page/profile.html" style="color:white; text-decoration:none;"> <button class="btn btn-lg btn-primary btn-block" type="submit"> Đăng
-        nhập</button></a>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Đăng nhập</button>
     <h3 class="h6  font-weight-normal mt-5">Đăng nhập bằng</h3>
     <div class="with-login">
       <a href="#"> <img src="../../image/imgIcon/facebook.svg" id="facebook"></i></a>
@@ -128,7 +127,7 @@
 
     </div>
 
-  </div>
+  </form>
 
   <!-- Footer -->
   <footer class=" bg-dark footerA text-center d-flex justify-content-center">
@@ -137,23 +136,14 @@
         <div class="ml-5 col-3">
           <div class="block">
             <p>PHƯƠNG THỨC THANH TOÁN</p>
-            <p><img class="icon m-2"
-                style="background-color: white; border: solid 1.1px; border-color: rgba(88, 87, 85, 0.233) ; border-radius: 5px; padding: 5px 1px 5.5px 1px;"
-                src="footer_phuongThucThanhtoan/vietcombank.svg" width="53px">
-              <img class="icon m-2"
-                style="background-color: white;border: solid 1.1px; border-color: rgba(88, 87, 85, 0.233) ;border-radius: 5px; padding: 1px 12px 1px 13px;"
-                src="footer_phuongThucThanhtoan/momo.png" width="55px">
-              <img class="icon m-2"
-                style="background-color: white;border: solid 1.1px; border-color: rgba(88, 87, 85, 0.233) ;border-radius: 5px; padding: 1.5px 0px 1.5px 0px;"
-                src="footer_phuongThucThanhtoan/agribank.png" width="53px">
-              <img class="icon m-2"
-                style="background-color: white;border: solid 1.1px; border-color: rgba(88, 87, 85, 0.233) ;border-radius: 5px; padding: 4px 1px 3px 1px;"
-                src="footer_phuongThucThanhtoan/BIDV.png" width="53px">
-              <img class="icon m-2" src="footer_phuongThucThanhtoan/visa.svg">
-              <img class="icon m-2" src="footer_phuongThucThanhtoan/cash.svg">
+            <p><img class="icon m-2" src="footer_phuongthuocThanhtoan/cash.svg" width="54">
+              <img class="icon  m-2" src="footer_phuongthuocThanhtoan/installment.svg" width="54">
+              <img class="icon  m-2" src="footer_phuongthuocThanhtoan/internet-banking.svg" width="54">
+              <img class="icon  m-2" src="footer_phuongthuocThanhtoan/jcb.svg" width="54">
+              <img class="icon  m-2" src="footer_phuongthuocThanhtoan/mastercard.svg" width="54">
+              <img class="icon  m-2" src="footer_phuongthuocThanhtoan/visa.svg" width="54">
             </p>
-          </div>
-          <p style="margin-top: -10px; font-size: 1em;">lượt truy cập</p>
+          </div><p style="margin-top: -10px; font-size: 1em;">lượt truy cập</p>
           <p style="margin-top: -20px;"><strong id="luottrruycap">9472</strong></p>
           <script>
             var myVar = setInterval(myTimer, 1000);
@@ -173,8 +163,8 @@
             <p> Gọi khiếu nại: <strong class="ml-1">1800.1079</strong> (8:00 - 21:30)</p>
             <p> Gọi bảo hành: <strong>1800.1069</strong> (8:00 - 21:00)</p>
           </div>
-          <img width="30%" src="footer_phuongThucThanhtoan/BoCongThuong.png">
-          <img width="10%" src="footer_phuongThucThanhtoan/BoCongThuong2.png">
+          <img width="30%" src="footer_phuongthuocThanhtoan/BoCongThuong.png">
+          <img width="10%" src="footer_phuongthuocThanhtoan/BoCongThuong2.png">
         </div>
 
 
@@ -184,11 +174,11 @@
           <p><a href=""> Chính sách đổi trả</a></p>
           <p> <a href="">Tuyển dụng</a></p>
           <p class="footerIcon">
-            <i style="color:rgb(13, 107, 214);" class="fa fa-facebook-official" aria-hidden="true"></i>
-            <i style="color: rgb(214, 18, 18);" class="fa fa-youtube-play mx-2" aria-hidden="true"></i>
-            <i style="color: rgb(144, 42, 228);" class="fa fa-linkedin-square" aria-hidden="true"></i>
-            <i style="color:rgb(10, 146, 146);" class="fa fa-twitter mx-2" aria-hidden="true"></i>
-          </p>
+              <i style="color:rgb(13, 107, 214);" class="fa fa-facebook-official" aria-hidden="true"></i>
+              <i style="color: rgb(214, 18, 18);" class="fa fa-youtube-play mx-2" aria-hidden="true"></i>
+              <i style="color: rgb(144, 42, 228);" class="fa fa-linkedin-square" aria-hidden="true"></i>
+              <i style="color:rgb(10, 146, 146);" class="fa fa-twitter mx-2" aria-hidden="true"></i>
+            </p>
         </div>
 
         <div class="row">
